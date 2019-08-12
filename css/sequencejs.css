@@ -1,0 +1,247 @@
+/*
+Theme created for use with Sequence.js (http://www.sequencejs.com/)
+
+Theme: Modern Slide In
+Version: 1.3
+Theme Author: Ian Lunn @IanLunn
+Author URL: http://www.ianlunn.co.uk/
+Theme URL: http://www.sequencejs.com/themes/modern-slide-in/
+
+This is a FREE theme and is available under a MIT License:
+http://www.opensource.org/licenses/mit-license.php
+
+Sequence.js and its dependencies are (c) Ian Lunn Design 2012 - 2013 unless otherwise stated.
+*/
+
+#sequence {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1280px;
+  color: white;
+  font-size: 0.625em;
+  margin: 0 auto;
+  height: 490px;
+}
+#sequence > .sequence-canvas {
+  height: 100%;
+  width: 100%;
+}
+#sequence > .sequence-canvas > li {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  top: -50%;
+}
+#sequence > .sequence-canvas > li img {
+  height: 96%;
+}
+#sequence > .sequence-canvas li > * {
+  position: absolute;
+  /* only cause the left and opacity properties to transition */
+  -webkit-transition-property: left, opacity;
+  -moz-transition-property: left, opacity;
+  -ms-transition-property: left, opacity;
+  -o-transition-property: left, opacity;
+  transition-property: left, opacity;
+}
+
+
+#sequence-preloader {
+  background: #d9d9d9;
+}
+
+.sequence-pagination {
+  bottom: 5%;
+  display: none;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 10;
+}
+.sequence-pagination li {
+        display: inline-block;
+        *display: inline;
+        /* Hack for IE7 and below as they don't support inline-block */
+        height: 58px;
+        margin: 0 15px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        border: 2px solid transparent;
+}
+.sequence-pagination li img {
+        cursor: pointer;
+        border: 2px solid #d5d5d5;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+}
+.sequence-pagination li img:hover {
+        margin-bottom: 4px;
+        -webkit-box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.3);
+}
+.sequence-pagination li.current img{
+        border-color: #cedb5c;
+        -webkit-box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.3);
+         box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+.a-pointer {
+  left: 20%;
+  opacity: 0;
+  top: 58%;
+  z-index: 50;
+}
+.a-pointer:hover {margin-top: -4px;}
+
+.animate-in .a-pointer {
+  left: 32%;
+  opacity: 1;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.animate-out .a-pointer {
+  left: 20%;
+  opacity: 0;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.b-pointer {
+  color: black;
+  font-size: 2em;
+  left: 80%;
+  opacity: 0;
+  top: 73%;
+}
+.b-pointer:hover {margin-top: -4px;}
+.animate-in .b-pointer {
+  left: 54%;
+  opacity: 1;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.animate-out .b-pointer {
+  left: 80%;
+  opacity: 0;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.model {
+  left: 45%;
+  top: 70%;
+  opacity: 0;
+  position: relative;
+  height: auto !important;
+}
+
+.animate-in .model {
+  left: 12%;
+  opacity: 1;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+}
+
+.animate-out .model {
+  left: 45%;
+  opacity: 0;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+@media only screen and  (min-width: 768px) {
+
+        #sequence {height: 315px;}
+        #sequence .model {max-width: 410px;left: 45%;}
+        #sequence .animate-in .model {left: 5%;}
+        #sequence .animate-out .model {left: 45%;}
+
+        #sequence .a-pointer {top: 54%;left: 17%; height: 98px; width:80px; padding: 10px; background-size: 100%;}
+        #sequence .a-pointer img {width:60px!important; height: 60px!important;}
+        #sequence .animate-in .a-pointer {left: 23%;}
+        #sequence .animate-out .a-pointer {left: 17%;}
+
+        #sequence .b-pointer {top: 72%;left: 77%; height: 98px; width:80px; padding: 10px; background-size: 100%;}
+        #sequence .b-pointer img {width:60px!important; height: 60px!important;}
+        #sequence .animate-in .b-pointer{left: 52%;}
+        #sequence .animate-out .b-pointer{left: 77%;}
+
+        #sequence .sequence-pagination {bottom: -3%;left:19%;}
+        #sequence .sequence-pagination li img {height: 40px;}
+
+}
+@media only screen and  (min-width: 875px) {
+        #sequence .model {left: 45%;}
+        #sequence .animate-in .model {left: 12%;}
+        #sequence .animate-out .model {left: 45%;}
+
+        #sequence .a-pointer {top: 54%;left: 17%;}
+        #sequence .animate-in .a-pointer {left: 28%;}
+        #sequence .animate-out .a-pointer {left: 17%;}
+
+        #sequence .b-pointer {top: 72%;left: 77%;}
+        #sequence .animate-in .b-pointer{left: 53%;}
+        #sequence .animate-out .b-pointer{left: 77%;}
+
+        #sequence .sequence-pagination {bottom: -2%;left:24%;}
+        #sequence .sequence-pagination li img {height: 44px;}
+}
+
+@media only screen and  (min-width: 992px) {
+        #sequence {height: 405px;}
+        #sequence .model {max-width: 530px;}
+
+        #sequence .a-pointer {top: 52%;left: 17%; height: 136px; width:111px; padding: 14px 0 0 15px; background-size: 100%;}
+        #sequence .a-pointer img {width:81px!important; height: 81px!important;}
+        #sequence .animate-in .a-pointer {left: 29%;}
+        #sequence .animate-out .a-pointer {left: 17%;}
+
+        #sequence .b-pointer {top: 70%;left: 77%; height: 136px; width:111px; padding: 14px 0 0 15px; background-size: 100%;}
+        #sequence .b-pointer img {width:81px!important; height: 81px!important;}
+        #sequence .animate-in .b-pointer{left: 51%;}
+        #sequence .animate-out .b-pointer{left: 77%;}
+
+        #sequence .sequence-pagination {bottom: 1%;left:27%;}
+        #sequence .sequence-pagination li img {height: 50px;}
+}
+@media only screen and  (min-width: 1200px) {
+        #sequence {height: 490px;}
+        #sequence .model {max-width: 630px;}
+        #sequence .a-pointer {top: 58%;left: 20%;}
+        #sequence .animate-in .a-pointer {left: 32%;}
+        #sequence .animate-out .a-pointer {left: 20%;}
+
+        #sequence .b-pointer {top: 73%;left: 80%;}
+        #sequence .animate-in .b-pointer{left: 54%;}
+        #sequence .animate-out .b-pointer{left: 80%;}
+
+        #sequence .sequence-pagination {bottom: 5%;left:30%;}
+        #sequence .sequence-pagination li img {height:54px;}
+
+}
