@@ -12,8 +12,8 @@ body {
         max-width: 1280px; margin: 0 auto; background: #fff;
         -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.21);
         -moz-box-shadow:    0px 0px 6px rgba(0, 0, 0, 0.21);
-        box-shadow: -20px 20px 7px 1px rgba(0, 0, 0, 0.15);
-        /* box-shadow:         0px 0px 6px rgba(0, 0, 0, 0.21); */
+        /* box-shadow: -20px 20px 7px 1px rgba(0, 0, 0, 0.15); */
+        box-shadow:         0px 0px 6px rgba(0, 0, 0, 0.21); 
         min-width: 320px;
         position: relative;
 
@@ -46,7 +46,7 @@ aside {padding: 20px 0;}
 #slider {
 	margin-bottom: 10px;
 	width: calc(100% + 30px);
-	position: relative;
+        position: relative;
 }
 
 #slider .slider-items {
@@ -71,8 +71,6 @@ aside {padding: 20px 0;}
 	border-radius: 50%;
 	position: absolute;
 	display: none;
-	box-shadow: -20px 20px 7px 1px rgba(0, 0, 0, 0.15);
-	/* box-shadow: -0.3125vw 0.3125vw 0.109375vw 0.015625vw rgba(0, 0, 0, 0.15); */
 }
 
 #slider .arrows_holder {
@@ -139,19 +137,17 @@ aside {padding: 20px 0;}
 #slider .arrows_holder .arrow:hover i {
 	color: #C1D628;
 }
-      
-      
-
+           
 /* end slider */
- .ellipse span {font-family: "Lato", sans-serif;  color: white; text-transform: uppercase; font-size: 26px; letter-spacing: 1px;}
+#slider .ellipse span {font-family: "Lato", sans-serif;  color: white; text-transform: uppercase; font-size: 26px; letter-spacing: 1px;}
 /*span {font-family: Lato-Black, sans-serif;  font-size: 25px; color: white;} */
-.ellipse span span {font-weight: bold; font-size: 45px;}
+#slider .ellipse span span {font-weight: bold; font-size: 45px;}
 
 .template { 
         width: calc(100% + 30px);
         font-family: "Lato", sans-serif;
         height: 480px;
-        border: 1px solid blue; 
+        /* border: 1px solid blue;  */
         margin-top: 20px; 
         margin-left: -15px; 
         margin-right: -15px;}
@@ -556,8 +552,11 @@ input.extra {display:none!important;}
 		   width: 19.5vw;
 		   height: 19.5vw;
 		   top: 1.85vw;
-		   left: 1.85vw;
-		}
+                   left: 1.85vw;
+                   box-shadow: -1.3572vw 1.3572vw 7px 1px rgba(0, 0, 0, 0.15);}
+         #slider .ellipse span { font-size: 1.8vw; }
+         #slider .ellipse span span {font-size: 3.13vw; }
+                  
 }
 @media only screen and  (min-width: 875px) {
         .news .item .date {top:53%}
@@ -577,8 +576,13 @@ input.extra {display:none!important;}
 			width: 22.5vw;
 			height: 22.5vw;
 			top: 1.75vw;
-			left: 1.75vw;
-		}
+                        left: 1.75vw;
+                        box-shadow: -1.6vw 1.6vw 7px 1px rgba(0, 0, 0, 0.15);}
+        #slider .ellipse span { font-size: 2.1vw; }
+        #slider .ellipse span span {font-size: 3.6vw; }
+        }
+               
+             
 }
 @media only screen and  (min-width: 1200px) {
 		.news .item .date {top:51%}
@@ -591,6 +595,9 @@ input.extra {display:none!important;}
 		top: 25px;
 		left: 25px;
 		width: 280px;
-		height: 280px;
-	}
+                height: 280px;
+                box-shadow: -20px 20px 7px 1px rgba(0, 0, 0, 0.15);
+        }
+        #slider .ellipse span { font-size: 26px; }
+        #slider .ellipse span span {font-size: 45px; }
 }

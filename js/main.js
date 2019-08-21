@@ -63,5 +63,27 @@ $(document).ready(function(){
     }
 
     $('input[name=jscode]').val('1');
+    bannerLoadImg();
+});
 
+
+
+function bannerLoadImg() {
+    var sWidth = $(window).width();
+    var dRatio = window.devicePixelRatio ? window.devicePixelRatio : 1;
+    var dataProp;
+
+    $('.lzy').each(function (index) {
+        var el = $(this);
+
+        if (sWidth > 0) { dataProp = 'mobile'; }
+        if (sWidth > 360 && el.data('tablet') != undefined) { dataProp = 'tablet'; }
+        if (sWidth > 767 && el.data('desktop') != undefined) { dataProp = 'desktop'; }
+        if (el.attr('src') != el.data(dataProp) && el.data(dataProp)) {
+            el.attr('src', el.data(dataProp));
+        }
+    });
+}
+$(window).resize(function () {
+    bannerLoadImg();
 });
