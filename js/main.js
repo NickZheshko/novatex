@@ -28,9 +28,12 @@ $(document).ready(function(){
                 showTime : 5000
     });
     
-    $(function(){
-        $('.slider-items').slick();
-       });
+
+    $('.slider-items').slick({
+        prevArrow : "#slider .arrow-prev",
+        nextArrow : "#slider .arrow-next"
+    });
+
 
     if($('.fancy').size() > 0) {
     	$('.fancy').fancybox();
