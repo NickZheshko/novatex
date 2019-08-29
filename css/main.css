@@ -3,21 +3,24 @@
    ========================================================================== */
 body {
         background: #e0e2e4 url(../img/bg.png) repeat;
-        font-family: 'Lato', sans-serif;
         background-attachment: fixed, fixed;
 }
 
 #body {
         max-width: 1280px;
         margin: 0 auto;
-        background: #fff;
+        background: #f0f0f0ff;
+        font-family: 'Lato', sans-serif;
         -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.21);
         -moz-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.21);
         /* box-shadow: -20px 20px 7px 1px rgba(0, 0, 0, 0.15); */
         box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.21);
         min-width: 320px;
         position: relative;
+}
 
+.right-column {
+        background-color: white;
 }
 
 p {
@@ -109,7 +112,7 @@ aside {
 
 /* slider */
 #slider {
-        margin-bottom: 10px;
+        /* margin-bottom: 10px; */
         width: calc(100% + 30px);
         position: relative;
 }
@@ -146,13 +149,13 @@ aside {
 #slider .arrows_holder>div:first-child {
         display: flex;
         justify-content: flex-end;
-        width: 70%;
+        width: 66.5%;
         margin-right: 30px;
         position: relative;
 }
 
 #slider .arrows_holder>div:last-child {
-        width: 30%;
+        width: 33.5%;
         position: relative;
 }
 
@@ -205,7 +208,6 @@ aside {
 
 /* end slider */
 #slider .ellipse span {
-        font-family: "Lato", sans-serif;
         color: white;
         text-transform: uppercase;
         font-size: 26px;
@@ -220,19 +222,28 @@ aside {
 
 .template {
         width: 100%;
-        font-family: "Lato", sans-serif;
         height: auto;
         margin-top: 50px;
 }
 
+.h-content {
+        margin-top: 0;
+        padding-top: 0;
+
+}
+
+.template .h-content {
+        margin-top: 0 !important;
+}
 .h-content h2 { 
         display: inline-block;
         font-size: 30px;
-        font-family: "Lato", sans-serif;
         color: rgb(78, 77, 77);
         line-height: 0.8;
         text-align: center;
         text-transform: none !important;
+        margin-bottom: 20px;
+        margin-top: 0 !important;
 }
 
 .h-content h2:after {
@@ -240,16 +251,13 @@ aside {
         content: "";
         background-color: rgb(198, 213, 64);
         width: 40px;
-        margin: auto;
-        position: absolute;
+        margin: 20px auto 0;
         height: 5px;
-        /* top: 50%; */
         
 }
 
 .h-content p {
                 font-size: 14px;
-                font-family: "Lato";
                 color: rgb(78, 77, 77);
                 font-style: italic;
                 line-height: 1.429;
@@ -294,7 +302,6 @@ aside {
         letter-spacing: 1px;
         text-transform: uppercase;
         margin-top: 15px;
-        border: 1px solid black;
         margin-bottom: 55px;
 }
 
@@ -306,18 +313,21 @@ aside {
         margin-left: 15px;
         margin-right: 15px;
 }
+.template_contenet > div {
+        width: 31.5%;
+}
 
 hr {
         display: block;
         background-color: #D8D4D3;
         width: calc(100% - 70px);
         bottom: 10px;
+        margin-bottom: 50px;
 }
 
 
 .template_contenet span {
         font-size: 20px;
-        font-family: "Lato", sans-serif;
         color: rgb(198, 213, 64);
         font-weight: bold;
         line-height: 0.9;
@@ -334,17 +344,114 @@ hr {
 }
 
 .template_contenet span+span+span {
-        font-size: 13px;
+        font-size: 14px;
         padding-top: 140px;
-        font-family: "Myriad Pro", sans-serif;
         font-weight: normal;
         color: rgb(78, 77, 77);
         line-height: 1.286;
 }
 
+      
+
+.for_links {
+        margin: auto;
+        background-color: #B59781;
+        width: 165px;
+        height: 50px;
+        border-radius: 50px;
+}
+
+.in_blocks {
+                display: block;
+                letter-spacing: 1px;
+                font-family: "Lato";
+                color: rgb(255, 255, 255);
+                text-transform: uppercase;
+                line-height: 2;
+                text-decoration: none;  
+                letter-spacing: 1px;
+                font-size: 12px;
+}
+.more-btn {
+        text-align: center;
+}
+.more-btn a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        line-height: 2;
+        text-decoration: none;  
+        font-size: 12px;
+        margin: 0 auto 30px;
+        background-color: #B59781;
+        color: #ffffff;
+        height: 50px;
+        padding-left: 25px;
+        padding-right: 25px;
+        border-radius: 50px;
+        width: 165px;
+        box-shadow: 0 2px #886D56;
+        margin-bottom: 45px !important;
+}
+
+.with_wave > img {
+        position: relative;
+}
+.on_image {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        line-height: 2;
+        text-decoration: none;  
+        font-size: 14px;
+        font-weight: bold;
+        background-color: #fff;
+        color: rgb(78, 77, 77);
+        height: 50px;
+        padding-left: 25px;
+        padding-right: 25px;
+        border-radius: 50px;
+        width: 8.5vw; 
+        position: absolute ;
+        top:35%;
+        left: 20%;
+        max-width: 170px;
+}
+
+#red {
+        color:red;
+}
+
+.without_margin {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important; 
+}
+.with_wave {
+        position: relative;
+}
+.with_wave:after,
+.with_wave:before {
+        content:"";
+        background-repeat: repeat-x;
+        width: 100%;
+        height: 9px;
+        position: absolute;
+        left: 0;
+}
+.with_wave:after {
+        bottom: 0;
+        background-image: url(/img/border-curve-bottom.png);
+}
+.with_wave:before {
+        top: 0;
+        background-image: url(/img/border-curve-top.png);
+}
+
 .advantages {
         width: 270px;
-        height: 300px;
+        height: 320px;
         background-color: #f0f0f0;
         padding: 0;
         position: relative;
@@ -365,25 +472,32 @@ hr {
         bottom: 0;
 }
 
-.template a  {
+.links  {
         display: block;
         font-size: 12px;
-        font-family: "Myriad Pro", sans-serif;
         color: rgb(126, 79, 37);
-        text-decoration: underline;
         text-transform: uppercase;
         line-height: 1.5;
         text-align: center;
         font-weight: bold;
         margin-bottom: 60px;
       }
+.links:after {
+        content: "";
+        display: block;
+        margin: auto;
+        width: 440px;
+        left: 27%;
+        background-color: #E4D4C9;
+        position: absolute;
+        height: 1px;
+}
 
 .gray {background-color: #E7E7E7;}
 
 
 .reviews div span  {
         font-size: 24px;
-        font-family: "Lato", sans-serif;
         color: rgb(78, 77, 77);
         line-height: 1;
         text-align: left;
@@ -408,7 +522,6 @@ hr {
 
 .reviews_description p {
         font-size: 18px;
-        font-family: "Lato Italic", sans-serif;
         color:#8D4E1C;
         font-style: italic; 
         line-height: 1.333;
@@ -420,7 +533,8 @@ hr {
 
 .trust > div:first-child {border: 5px solid #C1D628;} 
  
-.image_holder {display: inline-flex;
+.image_holder {
+        display: inline-flex;
         justify-content: center;
         border: 5px solid #E7E7E7;;
         border-radius: 50%;
@@ -433,11 +547,9 @@ hr {
         margin-bottom: 0;
 }
 
-
 #constant_holder {margin-top: 0;}
 #constant  {
         font-size: 12px;
-        font-family: "Lato";
         color: rgb(126, 79, 37);
         line-height: 1.5;
         text-align: left;
@@ -532,7 +644,6 @@ hr {
 .contacts {
         display: inline-block;
         font-size: 14px;
-        font-family: "Lato",sans-serif;
         line-height: 1.714;
         text-align: center;
         font-style: normal;
@@ -1401,7 +1512,7 @@ footer .footer .testimony .text {
         padding: 15px 40px 25px 45px;
         text-overflow: ellipsis;
         overflow:
-        ;
+;
         color: #fff;
         font: italic 14px/18px "Trebuchet MS", sans-serif;
 }
@@ -1477,7 +1588,19 @@ input.extra {
         display: none !important;
 }
 
+@media only screen and (max-width: 361px) {
+        .template_contenet > div {
+                width: 51%;
+                margin: auto;
+        }
+        .adaptive_span {
+                width: 0.5vw;
+        }
+}
+
 @media only screen and (max-width: 767px) {
+        
+
         #body {
                 max-width: 480px;
         }
@@ -1488,6 +1611,18 @@ input.extra {
 
         .worktime {
                 float: left;
+        }     
+        .on_image {
+                width: 10vw;
+        }
+        .template_contenet span+span+span { 
+                font-size: 1vw; 
+         }
+         .on_image {
+                font-size: 1vw;
+        }
+        .adaptive_span {
+                width: 1vw;
         }
 }
 
@@ -1535,14 +1670,30 @@ input.extra {
         #slider .ellipse span span {
                 font-size: 3.13vw;
         }
-
+        .on_image {
+                width: 12vw;
+        }
+        .advantages {
+                width: 12vw;
+        }
+        .template_contenet span+span+span { 
+               font-size: 1vw; 
+        }
+        .on_image {
+                font-size: 1vw;
+        }
+        .adaptive span {
+                width: 1.5vw;
+        }
 }
 
 @media only screen and (min-width: 875px) {
         .news .item .date {
                 top: 53%
         }
-
+        .on_image {
+                width: 12vw;
+        }
 }
 
 @media only screen and (min-width: 992px) {
@@ -1593,23 +1744,29 @@ input.extra {
         #slider .ellipse span span {
                 font-size: 3.6vw;
         }
+        .on_image {
+                width: 15vw;
+        }
 }
 
 
-}
 
 @media only screen and (min-width: 1200px) {
         .news .item .date {
-                top: 51%
+                top: 51%;
         }
-
+        .on_image {
+                min-width: 170px;
+                font-size: 14px;
+        }
 }
+
+        
 
 @media only screen and (min-width: 1281px) {
         .news .item .date {
                 top: 51%
         }
-
         #slider .ellipse {
                 top: 25px;
                 left: 25px;
@@ -1624,5 +1781,11 @@ input.extra {
 
         #slider .ellipse span span {
                 font-size: 45px;
+        }
+        .on_image {
+                max-width: 170px;
+        }
+        .advantages span+span+span {
+                font-size: 14px;
         }
 }
