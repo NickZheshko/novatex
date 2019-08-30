@@ -351,27 +351,6 @@ hr {
         line-height: 1.286;
 }
 
-      
-
-.for_links {
-        margin: auto;
-        background-color: #B59781;
-        width: 165px;
-        height: 50px;
-        border-radius: 50px;
-}
-
-.in_blocks {
-                display: block;
-                letter-spacing: 1px;
-                font-family: "Lato";
-                color: rgb(255, 255, 255);
-                text-transform: uppercase;
-                line-height: 2;
-                text-decoration: none;  
-                letter-spacing: 1px;
-                font-size: 12px;
-}
 .more-btn {
         text-align: center;
 }
@@ -393,11 +372,13 @@ hr {
         width: 165px;
         box-shadow: 0 2px #886D56;
         margin-bottom: 45px !important;
+        opacity: 0.8;
 }
 
 .with_wave > img {
         position: relative;
 }
+
 .on_image {
         display: inline-flex;
         justify-content: center;
@@ -442,11 +423,11 @@ hr {
 }
 .with_wave:after {
         bottom: 0;
-        background-image: url(/img/border-curve-bottom.png);
+        background-image: url(img/border-curve-bottom.png);
 }
 .with_wave:before {
         top: 0;
-        background-image: url(/img/border-curve-top.png);
+        background-image: url(img/border-curve-top.png);
 }
 
 .advantages {
@@ -1596,6 +1577,8 @@ input.extra {
         .adaptive_span {
                 width: 0.5vw;
         }
+
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -1683,13 +1666,17 @@ input.extra {
                 font-size: 1vw;
         }
         .adaptive span {
-                width: 1.5vw;
+                width: 0.5vw;
         }
+
 }
 
 @media only screen and (min-width: 875px) {
         .news .item .date {
                 top: 53%
+        }
+        .adaptive span {
+                width: 0.5vw;
         }
         .on_image {
                 width: 12vw;
@@ -1744,8 +1731,12 @@ input.extra {
         #slider .ellipse span span {
                 font-size: 3.6vw;
         }
+
         .on_image {
                 width: 15vw;
+        }
+        .adaptive span {
+                width: 0.2vw;
         }
 }
 
