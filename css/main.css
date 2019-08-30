@@ -432,11 +432,11 @@ hr {
 }
 .with_wave:after {
         bottom: 0;
-        background-image: url(/img/border-curve-bottom.png);
+        background-image: url(../img/border-curve-bottom.png);
 }
 .with_wave:before {
         top: 0;
-        background-image: url(/img/border-curve-top.png);
+        background-image: url(../img/border-curve-top.png);
 }
 
 .advantages {
