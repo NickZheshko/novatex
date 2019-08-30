@@ -462,7 +462,9 @@ hr {
         bottom: 0;
 }
 
-.links  {
+
+
+.links {
         display: inline-block;
         font-size: 12px;
         color: rgb(126, 79, 37);
@@ -471,32 +473,23 @@ hr {
         text-align: center;
         font-weight: bold;
         margin-bottom: 60px;
-        text-decoration: none;
-        /* position: relative; */
-      }
-
+        text-decoration: none !important;
+}
 
 .links:after {
         content: "";
         display: block;
         width: 100%;
         background-color: #E4D4C9;
-        /* position: absolute;  */
-        height: 1px;
-}
-
-.links:hover {
-        text-decoration: none;
+        position: relative;
+        top: -3px;
+        height: 2px;
 }
 
 .links:hover:after {
         opacity: 0;
 }
 
-.links:visited {
-        text-decoration: none;
-        color: black;
-}
 
 .gray {background-color: #E7E7E7;}
 
