@@ -34,7 +34,6 @@ $(document).ready(function(){
         nextArrow : "#slider .arrow-next"
     });
 
-
     if($('.fancy').size() > 0) {
     	$('.fancy').fancybox();
     	$('a.fancy').on("click", function(e){
