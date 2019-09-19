@@ -9,6 +9,22 @@
 	<meta name="description" content="Коллекции тканей для мягкой мебели Новатекс: Жаккард, Рогожка, Шенилл" />
 	<meta name="viewport" content="width=device-width">
 
+	<!-- 
+		@info стили css подключаются в следующем порядке:
+		1. шрифты
+		2. bootstrap, normalize, если есть
+		3. плагины и дополнения
+		4. основной файл стилей. в нашем случае main.css
+
+		была ошибка, два раза подключен один и тот же шрифт, один локально, другой через cdn
+		<link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+		@info
+		конструкция <link href="//www.adress.com"/> используется, чтобы неявно задать протокол.
+		если сайт работает по https://, то при подключении удаленных стилей или скриптов по http:// вызовет ошибку.
+	-->
+
 	<link rel="stylesheet" href="fonts/Lato/stylesheet.css">
 	<link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
@@ -25,6 +41,23 @@
 
 		<aside class="hidden-xs col-sm-4 col-md-3">
 			
+			<!-- 
+				@todo переверстать @section_1 согласно следующей структуре
+
+				<section class="aside-info">
+					<a href="" class="logo">
+						<img src="img/logo.png" alt="Novatex">
+						<span> Ткани, которые продают мебель!</span>
+					</a>
+					<span class="aside-contacts">
+						Оптовые продажи тканей для мягкой мебели
+						<span class="phone">+38 (044) <b>599-04-95</b></span>
+						<span class="phone">+38 (044) <b>599-04-95</b></span>
+					</span>
+				</section>
+			-->
+
+			<!-- @section_1 -->
 			<a href="/" class="logo">
 				<img src="img/logo.png" alt="Novatex">
 				<br /> <span> Ткани, которые продают мебель!</span>
@@ -45,8 +78,30 @@
 					<span class="big_numbers">500-17-95</span>
 				</span>
 			</div>
+			<!-- end @section_1 -->
 
 
+			<!-- 
+				@todo переверстать @section_2 согласно следующей структуре
+
+				<nav>
+					<ul class="menu">
+						<li><a href="/" title="Главная" class="active">Главная</a></li>
+						<li><a href="catalog/" title="Каталог тканей">Каталог тканей</a></li>
+						<li><a href="about/" title="О компании">О компании</a></li>
+						<li><a href="vakansii.html" title="Вакансии">Вакансии</a></li>
+						<li><a href="organizations/" title="Клиенты">Клиенты</a></li>
+						<li><a href="kontaktyi/" title="Контакты">Контакты</a></li>
+					</ul>
+					<ul class="socials">
+						<li><a href="#"><i class="fab fa-instagram"></i></li>
+						<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+						<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+						<li><a href="#"><i class="fas fa-search"></i></a></li>
+					</ul>
+				</nav>
+			-->
+			<!-- @section_2 -->
 			<nav>
 				<ul class="">
 					<li><a href="/" title="Главная" class="active">Главная</a></li>
@@ -64,7 +119,10 @@
 					</div>
 				</div>
 			</nav>
+			<!-- end @section_2 -->
+
 		</aside>
+
 
 
 		<div class="col-xs-12 col-sm-8 col-md-9 right-column">
@@ -102,45 +160,130 @@
 					</div>
 				</div>
 				<div class="ellipse">
+					<!-- 
+						@info в тексте здесь не должно быть принудительного переноса с <br> 
+						@todo подправить стили
+					-->
 					<span><span>ТКАНИ,</span> КОТОРЫЕ ПРОДАЮТ МЕБЕЛЬ!</span>
 				</div>
 				<div class="arrows_holder">
-					<div>
-						<div class="arrow arrow-prev"><i class="fas fa-arrow-left"></i></div>
-					</div>
-					<div>
-						<div class="arrow arrow-next"><i class="fas fa-arrow-right"></i></div>
-					</div>
+					<div><div class="arrow arrow-prev"><i class="fas fa-arrow-left"></i></div></div>
+					<div><div class="arrow arrow-next"><i class="fas fa-arrow-right"></i></div></div>
 				</div>
 			</div>
 
 			<div class="template">
 				<div class="h-content">
 					<h2>Каталог <span>тканей</span></h2>
+					<!-- 
+						@info в тексте здесь не должно быть принудительного переноса с <br> 
+						@todo удалить <br> подправить стили
+					-->
 					<p>Наша компания предлагает вам широкий ассортимент тканей, <br> который постоянно обновляется</p>
 				</div>
+
+
+				<!-- 
+					@todo переверстать @section_3 блоки согласно следеющей структуре, подправить стили, исправить ошибки
+					
+					<div class="collection-1">
+						<div class="item with_wave">
+							<a href="">
+								<img src="img/map.png" alt="" class="img-responsive">
+								<span>Терможаккард</span>
+							</a>
+						</div>
+						<div class="item with_wave">
+							<a href="">
+								<img src="img/map.png" alt="" class="img-responsive">
+								<span>Микровелюр</span>
+							</a>
+						</div>
+						<div class="item with_wave">
+							<a href="">
+								<img src="img/map.png" alt="" class="img-responsive">
+								<span>% Sale</span>
+							</a>
+						</div>
+					</div>
+
+				-->
+
+				<!-- @section_3 -->
 				<div class="template_contenet">
-					<div class="with_wave"> <a href="#"><img src="img/map.png" alt="" class="img-responsive">
-							<a class="on_image" href="#">Терможаккард</a> </a></div>
+					<!-- 
+						@info в этом месте в тег <a> вложен еще один тег <a>
+						@todo удалить лишний тег <a>. Переверстать и испраить стили. 
+						структура здесь должна быть вида:
+
+						<div class="with_wave">
+							<a href="">
+								<img src="img/map.png" alt="" class="img-responsive">
+								<span>Терможаккард</span>
+							</a>
+						</div>
+
+					-->
+					<div class="with_wave"> 
+						<a href="#"><img src="img/map.png" alt="" class="img-responsive">
+							<a class="on_image" href="#">Терможаккард</a> </a>
+						</div>
 					<div class="with_wave"> <a href="#"><img src="img/map.png" alt="" class="img-responsive">
 							<a class="on_image" href="#">Микровелюр</a></a></div>
 					<div class="with_wave"> <a href="#"><img src="img/map.png" alt="" class="img-responsive">
 							<a id="red" class="on_image" href="#">% Sale</a></a></div>
 				</div>
+				<!-- end @section_3 -->
+
+
 				<div class="more-btn">
 					<a href="#">показать все</a>
 				</div>
 			</div>
 
+
 			<div class="template">
 				<div class="h-content">
 					<h2>Наши <span>преимущества</span></h2>
-					<p>Наши клиенты доверяют нам и выбирают сотрудничество с нашей компанией, <br> потому что у нас:
-					</p>
+					<!-- 
+						@info в тексте здесь не должно быть принудительного переноса с <br> 
+						@todo удалить <br> подправить стили
+					-->
+					<p>Наши клиенты доверяют нам и выбирают сотрудничество с нашей компанией, <br> потому что у нас:</p>
 				</div>
+
+
+
+				<!-- 
+					@todo переверстать @section_4 блоки согласно следеющей структуре и подправить стили
+
+					<div class="collection-2">
+						<div class="item with_wave">
+							<span class="num">01</span>
+							<h2>Постоянное наличие товара на складе</h2>
+							<p>
+								Вы можете не беспокоится, что нужного товара не окажется на складе и вам придется ожидать его поставки. Мы
+								заботимся о том, чтобы он был в наличии тогда, когда вам это необходимо.
+							</p>
+						</div>
+						<div class="item with_wave">
+							....
+						</div>
+						<div class="item with_wave">
+							.....
+						</div>
+					</div>
+						
+				-->
+
+				<!-- @section_4 -->
 				<div class="template_contenet">
 					<div class="advantages with_wave">
 						<span>01</span>
+						<!-- 
+							@info в тексте здесь и далее не должно быть принудительного переноса с <br> 
+							@todo удалить <br> подправить стили
+						-->
 						<span class="adaptive_span">Постоянное наличие <br> товара на складе</span>
 						<span>
 							Вы можете не беспокоится, <br>
@@ -170,28 +313,40 @@
 							опытом в мебельном бизнесе <br> гарантирует высокое качество <br>своей работы. </span>
 					</div>
 				</div>
+				<!-- end @section_4 -->
+
 				<a class="links" href="#">Узнайте больше о наших преимуществах и о компании здесь</a>
 			</div>
+
 
 			<div class="template">
 				<div class="h-content">
 					<h2>Нам <span>доверяют</span></h2>
+					<!-- 
+						@info в тексте здесь не должно быть принудительного переноса с <br> 
+						@todo удалить <br> подправить стили
+					-->
 					<p>За годы нашей работы десятки мебельных компаний <br>
 						стали нашими постоянными клиентами.</p>
 				</div>
+				
 				<div class="trust">
 					<div class="images_changes">
 						<div><img src="img/icon/facebook.png" alt=""></div>
 						<div><img src="img/icon/facebook.png" alt=""></div>
 						<div><img src="img/icon/facebook.png" alt=""></div>
 						<div><img src="img/icon/facebook.png" alt=""></div>
-
 					</div>
 
 					<div class="reviews">
 						<div>
 							<h2>Отзывы <span>наших клиентов</span></h2>
 						</div>
+
+						<!-- 
+							@info в этом месте мы говорили что будет <p> вместо <div> 
+							@todo заменить <div class="reviews_description"> на <p>
+						-->
 						<div class="reviews_description">
 							"Спасибо компании "Новатекс"
 							за высоко-профессиональную работу"
@@ -200,7 +355,6 @@
 							<div class="image_holder"><img src="img/Layer 3.png" alt=""></div>
 							<figcaption> Компания “Константа”</figcaption>
 						</figure>
-
 					</div>
 
 				</div>
@@ -211,6 +365,10 @@
 			<section class="template">
 				<div class="h-content">
 					<h2> Свяжитесь <span> с нами</span></h2>
+					<!-- 
+						@info в тексте здесь не должно быть принудительного переноса с <br> 
+						@todo удалить <br> подправить стили
+					-->
 					<p>Если у вас остались какие-либо вопросы, задайте их нам <br>
 						используя эту форму или позвоните по телефону.</p>
 				</div>
@@ -224,6 +382,10 @@
 				<div class="template">
 					<div class="h-content">
 						<h2>Представители <span>в Украине</span></h2>
+						<!-- 
+							@info в тексте здесь не должно быть принудительного переноса с <br> 
+							@todo удалить <br> подправить стили
+						-->
 						<p>
 							Наведите курсор мыши на точку, <br>
 							чтобы увидеть город и контакты представителя.
@@ -241,20 +403,55 @@
 					</div>
 
 					<div class="contact_info">
+						<!-- 
+							@todo переверстать @section_5 блоки согласно следеющей структуре и подправить стили 
+							
+							<p class="contacts">
+								<span><b>Телефоны:</b></span>
+								<span>
+									гор. +38 (044) 599-04-95 
+									<br>моб. +38 (066) 500-20-36 
+									<br>тел./факс: +38 (044) 500-17-95 
+								</span>
+								<span><b>E-mail:</b> <a href="mailto:novateks@info.ua">novateks@info.ua</a></span>
+								<span><b>Skype:</b> <a href="skype:novateks?chat">novateks</a></span>
+							</p>
+						-->
+						
+						<!-- @section_5 -->
 						<p class="contacts">
-							<span class="brown">Телефоны:</span><br>
-							гор. +38 (044) 599-04-95 <br>
-							моб. +38 (066) 500-20-36 <br>
-							тел./факс: +38 (044) 500-17-95 <br>
-							<span id="mail" class="brown">E-mail:</span> novateks@info.ua
+							<span class="brown">Телефоны:</span>
+							<br>
+							<br><span id="mail" class="brown">E-mail:</span> novateks@info.ua
 							<br><span class="brown">Skype:</span> novateks
 						</p>
+						<!-- @section_5 -->
 					</div>
 
 					<a href="#">Контакты всех представителей</a>
 				</div>
 
 			</section>
+
+			<!--  
+				@todo Переверстать <footer> согласно следующей структуре
+
+				<footer>
+					<div>
+						<a href="#"><img src="img/logo-footer.png" alt=""></a>
+					</div>
+					<div>
+						<ul class="socials">
+							<li><a href="#"><i class="fab fa-instagram"></i></li>
+							<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+						</ul>
+					</div>
+					<div>
+						<span class="copyright">&copy; Novatex 2012-2019</span>
+					</div>
+				</footer>
+			-->
 
 			<footer>
 				<div class="logo_holder">
@@ -272,6 +469,17 @@
 		</div>
 	</div>
 
+	<!-- 
+		@info скрипты подключаются в следующей последовательности
+		1. Jquery
+		2. Bootstrap, при его наличии, т.к. зависит от jQuery
+		3. Плагины и дополнения т.к. часто зависят от jQuery или Bootstrap
+		4. Основной файл скриптов. в нашем случае main.js
+	
+		как правило плагины размещаются в каталоге /js/vendors/
+		у тебя slick был выненсен в корневую директорию. Старайся как можно меньше туда что-то помещать, 
+		а организовывай структуру по папкам.
+	-->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script>
 		window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')
