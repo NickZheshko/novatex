@@ -27,6 +27,8 @@
 
 	<link rel="stylesheet" href="fonts/Lato/stylesheet.css">
 	<link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="fonts/font-awesome-4.0.3/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="js/vendor/slick/slick.css" />
 	<link rel="stylesheet" href="js/vendor/slick/slick-theme.css" />
@@ -40,70 +42,27 @@
 	<div id="body">
 
 		<aside class="hidden-xs col-sm-4 col-md-3">
-			
-			<!-- 
-				@todo переверстать @section_1 согласно следующей структуре
 
-				<section class="aside-info">
-					<a href="" class="logo">
-						<img src="img/logo.png" alt="Novatex">
-						<span> Ткани, которые продают мебель!</span>
-					</a>
-					<span class="aside-contacts">
-						Оптовые продажи тканей для мягкой мебели
-						<span class="phone">+38 (044) <b>599-04-95</b></span>
-						<span class="phone">+38 (044) <b>599-04-95</b></span>
-					</span>
-				</section>
-			-->
 
-			<!-- @section_1 -->
-			<a href="/" class="logo">
-				<img src="img/logo.png" alt="Novatex">
-				<br /> <span> Ткани, которые продают мебель!</span>
-			</a>
-			<div>
-				<p> 
-					<span> 
-						Оптовые продажи тканей <br>
-						для мягкой мебели </span>
-				</p>
-				<span class="phones">
-					<span class="small_numbers"> +38 (044)</span> 
-					<span class="big_numbers">599-04-95</span>
+			<section class="aside-info">
+				<a href="#" class="logo">
+					<img src="img/logo.png" alt="Novatex">
+					<span> Ткани, которые продают мебель!</span>
+				</a>
+				<span class="aside-contacts">
+					Оптовые продажи тканей
+					для мягкой мебели
+					<span class="phone">+38 (044) <b>599-04-95</b></span>
+					<span class="phone">+38 (044) <b>500-17-95</b></span>
 				</span>
-				<br>
-				<span class="phones">
-					<span class="small_numbers"> +38 (044)</span> 
-					<span class="big_numbers">500-17-95</span>
-				</span>
-			</div>
-			<!-- end @section_1 -->
+			</section>
 
 
 			<!-- 
-				@todo переверстать @section_2 согласно следующей структуре
+				@todo переверстать @section_2 согласно следующей структуре -->
 
-				<nav>
-					<ul class="menu">
-						<li><a href="/" title="Главная" class="active">Главная</a></li>
-						<li><a href="catalog/" title="Каталог тканей">Каталог тканей</a></li>
-						<li><a href="about/" title="О компании">О компании</a></li>
-						<li><a href="vakansii.html" title="Вакансии">Вакансии</a></li>
-						<li><a href="organizations/" title="Клиенты">Клиенты</a></li>
-						<li><a href="kontaktyi/" title="Контакты">Контакты</a></li>
-					</ul>
-					<ul class="socials">
-						<li><a href="#"><i class="fab fa-instagram"></i></li>
-						<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-						<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-						<li><a href="#"><i class="fas fa-search"></i></a></li>
-					</ul>
-				</nav>
-			-->
-			<!-- @section_2 -->
 			<nav>
-				<ul class="">
+				<ul class="menu">
 					<li><a href="/" title="Главная" class="active">Главная</a></li>
 					<li><a href="catalog/" title="Каталог тканей">Каталог тканей</a></li>
 					<li><a href="about/" title="О компании">О компании</a></li>
@@ -111,14 +70,16 @@
 					<li><a href="organizations/" title="Клиенты">Клиенты</a></li>
 					<li><a href="kontaktyi/" title="Контакты">Контакты</a></li>
 				</ul>
-				<div>
-					<div class="social_networks"> <a href="#"><i class="fab fa-instagram"></i></a></div>
-					<div class="social_networks"> <a href="#"><i class="fab fa-facebook-f"></i></a> </div>
-					<div class="social_networks"> <a href="#"><i class="fab fa-pinterest-p"></i></a> </div>
-					<div id="search" class="social_networks"> <a href="#"><i class="fa fa-search"></i></a>
-					</div>
-				</div>
+				<ul class="socials">
+					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+					<li><a href="#"><i class="fas fa-search"></i></a></li>
+				</ul>
 			</nav>
+
+			<!-- @section_2 -->
+
 			<!-- end @section_2 -->
 
 		</aside>
@@ -130,7 +91,7 @@
 			<div class="visible-xs use-bg row logo-wrap">
 				<a href="/" class="logo">
 					<img src="img/logo.png" alt="Novatex">
-					<br />Ткани, которые продают мебель!
+					Ткани, которые продают мебель!
 				</a>
 				<form class="search" action="results.html" method="get">
 					<input type="text" class="form-control search-field" placeholder="Поиск..." name="seacrh">
@@ -142,20 +103,17 @@
 				<div class="slider-items">
 					<div>
 						<img src="img/blank.png" data-mobile="img/sofas/mobile-slider.jpg"
-							data-tablet="img/sofas/tablet-slider.jpg" 
-							data-desktop="img/sofas/slider-new.jpg"
+							data-tablet="img/sofas/tablet-slider.jpg" data-desktop="img/sofas/slider-new.jpg"
 							class="lzy" alt="Мебель">
 					</div>
 					<div>
 						<img src="img/blank.png" data-mobile="img/sofas/mobile-slider.jpg"
-							data-tablet="img/sofas/tablet-slider.jpg" 
-							data-desktop="img/sofas/slider-new.jpg"
+							data-tablet="img/sofas/tablet-slider.jpg" data-desktop="img/sofas/slider-new.jpg"
 							class="lzy" alt="Мебель">
 					</div>
 					<div>
 						<img src="img/blank.png" data-mobile="img/mobile-slider.jpg"
-							data-tablet="img/sofas/tablet-slider.jpg" 
-							data-desktop="img/sofas/slider-new.jpg"
+							data-tablet="img/sofas/tablet-slider.jpg" data-desktop="img/sofas/slider-new.jpg"
 							class="lzy" alt="Мебель">
 					</div>
 				</div>
@@ -167,8 +125,12 @@
 					<span><span>ТКАНИ,</span> КОТОРЫЕ ПРОДАЮТ МЕБЕЛЬ!</span>
 				</div>
 				<div class="arrows_holder">
-					<div><div class="arrow arrow-prev"><i class="fas fa-arrow-left"></i></div></div>
-					<div><div class="arrow arrow-next"><i class="fas fa-arrow-right"></i></div></div>
+					<div>
+						<div class="arrow arrow-prev"><i class="fas fa-arrow-left"></i></div>
+					</div>
+					<div>
+						<div class="arrow arrow-next"><i class="fas fa-arrow-right"></i></div>
+					</div>
 				</div>
 			</div>
 
@@ -179,62 +141,40 @@
 						@info в тексте здесь не должно быть принудительного переноса с <br> 
 						@todo удалить <br> подправить стили
 					-->
-					<p>Наша компания предлагает вам широкий ассортимент тканей, <br> который постоянно обновляется</p>
+					<p>Наша компания предлагает вам широкий ассортимент тканей,
+						который постоянно обновляется</p>
 				</div>
 
 
 				<!-- 
-					@todo переверстать @section_3 блоки согласно следеющей структуре, подправить стили, исправить ошибки
-					
-					<div class="collection-1">
-						<div class="item with_wave">
-							<a href="">
-								<img src="img/map.png" alt="" class="img-responsive">
-								<span>Терможаккард</span>
-							</a>
-						</div>
-						<div class="item with_wave">
-							<a href="">
-								<img src="img/map.png" alt="" class="img-responsive">
-								<span>Микровелюр</span>
-							</a>
-						</div>
-						<div class="item with_wave">
-							<a href="">
-								<img src="img/map.png" alt="" class="img-responsive">
-								<span>% Sale</span>
-							</a>
-						</div>
-					</div>
+					@todo переверстать @section_3 блоки согласно следеющей структуре, подправить стили, исправить ошибки-->
 
-				-->
 
-				<!-- @section_3 -->
-				<div class="template_contenet">
-					<!-- 
-						@info в этом месте в тег <a> вложен еще один тег <a>
-						@todo удалить лишний тег <a>. Переверстать и испраить стили. 
-						структура здесь должна быть вида:
-
-						<div class="with_wave">
-							<a href="">
-								<img src="img/map.png" alt="" class="img-responsive">
-								<span>Терможаккард</span>
-							</a>
-						</div>
-
-					-->
-					<div class="with_wave"> 
-						<a href="#"><img src="img/map.png" alt="" class="img-responsive">
-							<a class="on_image" href="#">Терможаккард</a> </a>
-						</div>
-					<div class="with_wave"> <a href="#"><img src="img/map.png" alt="" class="img-responsive">
-							<a class="on_image" href="#">Микровелюр</a></a></div>
-					<div class="with_wave"> <a href="#"><img src="img/map.png" alt="" class="img-responsive">
-							<a id="red" class="on_image" href="#">% Sale</a></a></div>
-				</div>
 				<!-- end @section_3 -->
 
+
+				<!-- @section_3 -->
+
+				<div class="collection-1">
+					<div class="item with_wave">
+						<a href="">
+							<img src="img/map.png" alt="" class="img-responsive">
+							<span>Терможаккард</span>
+						</a>
+					</div>
+					<div class="item with_wave">
+						<a href="">
+							<img src="img/map.png" alt="" class="img-responsive">
+							<span>Микровелюр</span>
+						</a>
+					</div>
+					<div class="item with_wave">
+						<a href="">
+							<img src="img/map.png" alt="" class="img-responsive">
+							<span>% Sale</span>
+						</a>
+					</div>
+				</div>
 
 				<div class="more-btn">
 					<a href="#">показать все</a>
@@ -249,7 +189,8 @@
 						@info в тексте здесь не должно быть принудительного переноса с <br> 
 						@todo удалить <br> подправить стили
 					-->
-					<p>Наши клиенты доверяют нам и выбирают сотрудничество с нашей компанией, <br> потому что у нас:</p>
+					<p>Наши клиенты доверяют нам и выбирают сотрудничество с нашей компанией,
+						потому что у нас:</p>
 				</div>
 
 
@@ -257,60 +198,49 @@
 				<!-- 
 					@todo переверстать @section_4 блоки согласно следеющей структуре и подправить стили
 
-					<div class="collection-2">
-						<div class="item with_wave">
-							<span class="num">01</span>
-							<h2>Постоянное наличие товара на складе</h2>
-							<p>
-								Вы можете не беспокоится, что нужного товара не окажется на складе и вам придется ожидать его поставки. Мы
-								заботимся о том, чтобы он был в наличии тогда, когда вам это необходимо.
-							</p>
-						</div>
-						<div class="item with_wave">
-							....
-						</div>
-						<div class="item with_wave">
-							.....
-						</div>
-					</div>
-						
-				-->
+				
 
-				<!-- @section_4 -->
-				<div class="template_contenet">
-					<div class="advantages with_wave">
-						<span>01</span>
-						<!-- 
-							@info в тексте здесь и далее не должно быть принудительного переноса с <br> 
-							@todo удалить <br> подправить стили
-						-->
-						<span class="adaptive_span">Постоянное наличие <br> товара на складе</span>
-						<span>
-							Вы можете не беспокоится, <br>
-							что нужного товара не окажется <br>
-							на складе и вам придется ожидать <br>его поставки.
-							Мы заботимся о <br>том, чтобы он был в наличии <br> тогда, когда вам это
+				 @section_4 -->
+				<div class="collection-2">
+					<div class="item with_wave">
+						<span class="num">01</span>
+						<h2>Постоянное наличие
+							товара на складе</h2>
+						<p>Вы можете не беспокоится,
+							что нужного товара не окажется
+							на складе и вам придется ожидать
+							его поставки. Мы заботимся о
+							том, чтобы он был в наличии
+							тогда, когда вам это
+							необходимо.</p>
+					</div>
+
+					<div class="item with_wave">
+						<span class="num">02</span>
+						<h2>Широкий ассортимент
+							продукции</h2>
+						<p> Вы можете не беспокоится,
+							что нужного товара не окажется
+							на складе и вам придется ожидать
+							его поставки. Мы заботимся о
+							том, чтобы он был в наличии
+							тогда, когда вам это
 							необходимо.
-						</span>
+						</p>
 					</div>
 
-					<div class="advantages with_wave">
-						<span>02</span>
-						<span class="adaptive_span">Широкий ассортимент <br> продукции</span>
-						<span>Вы можете не беспокоится, <br>
-							что нужного товара не окажется <br>
-							на складе и вам придется ожидать <br>его поставки.
-							Мы заботимся о <br>том, чтобы он был в наличии <br> тогда, когда вам это
-							необходимо.</span>
-					</div>
-
-					<div class="advantages with_wave">
-						<span>03</span>
-						<span class="adaptive_span">Качественный <br> сервис</span>
-						<span>Мы прислушиваемся к интересам <br> наших клиентов, поэтому <br>постоянно
-							совершенствуем свою<br> работу.
-							Уникальный коллектив <br> профессионалов с многолетним <br>
-							опытом в мебельном бизнесе <br> гарантирует высокое качество <br>своей работы. </span>
+					<div class="item with_wave">
+						<span class="num">03</span>
+						<h2>Качественный
+							сервис</h2>
+						<p>Мы прислушиваемся к интересам
+							наших клиентов, поэтому
+							постоянно совершенствуем свою
+							работу. Уникальный коллектив
+							профессионалов с многолетним
+							опытом в мебельном бизнесе
+							гарантирует высокое качество
+							своей работы.</p>
 					</div>
 				</div>
 				<!-- end @section_4 -->
@@ -326,10 +256,10 @@
 						@info в тексте здесь не должно быть принудительного переноса с <br> 
 						@todo удалить <br> подправить стили
 					-->
-					<p>За годы нашей работы десятки мебельных компаний <br>
+					<p>За годы нашей работы десятки мебельных компаний
 						стали нашими постоянными клиентами.</p>
 				</div>
-				
+
 				<div class="trust">
 					<div class="images_changes">
 						<div><img src="img/icon/facebook.png" alt=""></div>
@@ -347,10 +277,10 @@
 							@info в этом месте мы говорили что будет <p> вместо <div> 
 							@todo заменить <div class="reviews_description"> на <p>
 						-->
-						<div class="reviews_description">
+						<p>
 							"Спасибо компании "Новатекс"
 							за высоко-профессиональную работу"
-						</div>
+						</p>
 						<figure>
 							<div class="image_holder"><img src="img/Layer 3.png" alt=""></div>
 							<figcaption> Компания “Константа”</figcaption>
@@ -369,7 +299,7 @@
 						@info в тексте здесь не должно быть принудительного переноса с <br> 
 						@todo удалить <br> подправить стили
 					-->
-					<p>Если у вас остались какие-либо вопросы, задайте их нам <br>
+					<p>Если у вас остались какие-либо вопросы, задайте их нам
 						используя эту форму или позвоните по телефону.</p>
 				</div>
 
@@ -386,8 +316,7 @@
 							@info в тексте здесь не должно быть принудительного переноса с <br> 
 							@todo удалить <br> подправить стили
 						-->
-						<p>
-							Наведите курсор мыши на точку, <br>
+						<p> Наведите курсор мыши на точку,
 							чтобы увидеть город и контакты представителя.
 						</p>
 					</div>
@@ -403,28 +332,22 @@
 					</div>
 
 					<div class="contact_info">
-						<!-- 
-							@todo переверстать @section_5 блоки согласно следеющей структуре и подправить стили 
-							
-							<p class="contacts">
-								<span><b>Телефоны:</b></span>
-								<span>
-									гор. +38 (044) 599-04-95 
-									<br>моб. +38 (066) 500-20-36 
-									<br>тел./факс: +38 (044) 500-17-95 
-								</span>
-								<span><b>E-mail:</b> <a href="mailto:novateks@info.ua">novateks@info.ua</a></span>
-								<span><b>Skype:</b> <a href="skype:novateks?chat">novateks</a></span>
-							</p>
-						-->
-						
-						<!-- @section_5 -->
-						<p class="contacts">
-							<span class="brown">Телефоны:</span>
-							<br>
-							<br><span id="mail" class="brown">E-mail:</span> novateks@info.ua
-							<br><span class="brown">Skype:</span> novateks
+
+
+
+						<p class="contacts"><span><b>Телефоны:</b></span>
+							<span>гор. +38 (044) 599-04-95
+								моб. +38 (066) 500-20-36
+								тел./факс: +38 (044) 500-17-95 </span>
+							<span><b>E-mail:</b> <a href="mailto:novateks@info.ua">novateks@info.ua</a></span>
+							<span><b>Skype:</b> <a href="skype:novateks?chat">novateks</a></span>
 						</p>
+
+						<!-- @todo переверстать @section_5 блоки согласно следеющей структуре и подправить стили 		
+						-->
+
+						<!-- @section_5 -->
+						
 						<!-- @section_5 -->
 					</div>
 
@@ -437,35 +360,23 @@
 				@todo Переверстать <footer> согласно следующей структуре
 
 				<footer>
-					<div>
-						<a href="#"><img src="img/logo-footer.png" alt=""></a>
-					</div>
-					<div>
-						<ul class="socials">
-							<li><a href="#"><i class="fab fa-instagram"></i></li>
-							<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-							<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-						</ul>
-					</div>
-					<div>
-						<span class="copyright">&copy; Novatex 2012-2019</span>
-					</div>
 				</footer>
 			-->
 
 			<footer>
-				<div class="logo_holder">
+				<div>
 					<a href="#"><img src="img/logo-footer.png" alt=""></a>
 				</div>
-				<div>
-					<div class="social_networks"> <a href="#"><i class="fab fa-instagram"></i></a></div>
-					<div class="social_networks"> <a href="#"><i class="fab fa-facebook-f"></i></a></div>
-					<div class="social_networks"> <a href="#"><i class="fab fa-pinterest-p"></i></a></div>
+			<div >
+				<ul class="socials">
+					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+				</ul>
+			</div>
+				<div><span> &copy; Novatex 2012-2019</span>
 				</div>
-				<div><a href="#"> &copy; Novatex 2012-2019</a></div>
 			</footer>
-
-
 		</div>
 	</div>
 
@@ -491,4 +402,5 @@
 	<script src="js/main.js"></script>
 
 </body>
+
 </html>
