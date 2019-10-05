@@ -16,6 +16,9 @@
 	<meta name="viewport" content="width=device-width">
 
 	<link rel="stylesheet" href="fonts/Lato/stylesheet.css">
+	<link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="fonts/font-awesome-4.0.3/css/font-awesome.min.css">
 	<link rel="stylesheet" href="slick/slick.css" />
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/bootstrap-theme.css">
@@ -25,8 +28,6 @@
 	<link type="text/css" rel="stylesheet" href="css/mmenu.css" />
 	<link type="text/css" rel="stylesheet" href="css/mmenu-theme-light.css" />
 	<link type="text/css" rel="stylesheet" href="js/vendor/fancybox/jquery.fancybox.css" />
-	<link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
-	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
 	<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 	<script type="text/javascript" src="/assets/components/phpthumbsup/js/responsive.js"></script>
@@ -46,67 +47,38 @@
 
 
 		<aside class="hidden-xs col-sm-4 col-md-3">
-			<a href="/" class="logo">
-				<img src="img/logo.png" alt="Novatex">
-				<br /> <span> Ткани, которые продают мебель!</span>
-			</a>
+			<section class="aside-info">
+				<a href="#" class="logo">
+					<img src="img/logo.png" alt="Novatex">
+					<span> Ткани, которые продают мебель!</span>
+				</a>
+				<span class="aside-contacts">
+					Оптовые продажи тканей
+					для мягкой мебели
+					<span class="phone">+38 (044) <b>599-04-95</b></span>
+					<span class="phone">+38 (044) <b>500-17-95</b></span>
+				</span>
+			</section>
 
-			<!-- <hr> -->
-			<div>
-				<p> <span> Оптовые продажи тканей <br>
-						для мягкой мебели </span></p>
-				<span class="phones"><span class="small_numbers"> +38 (044)</span> <span class="big_numbers">
-						599-04-95</span></span>
-				<br>
-				<span class="phones"><span class="small_numbers"> +38 (044)</span> <span class="big_numbers">
-						500-17-95</span></span>
-			</div>
-			<!-- <hr> -->
 			<nav>
-
-				<ul class="">
-					<li><a href="/" title="Главная">
-
-							Главная</a></li>
-					<li><a href="catalog/" title="Каталог тканей">
-
-							Каталог тканей</a></li>
-					<li><a href="about/" title="О компании">
-
-							О компании</a></li>
-					<li><a href="vakansii.html" title="Вакансии" class="active">
-
-							Вакансии</a></li>
-					<li><a href="organizations/" title="Клиенты">
-
-							Клиенты</a></li>
-					<li><a href="kontaktyi/" title="Контакты">
-
-							Контакты</a></li>
+				<ul class="menu">
+					<li><a href="/" title="Главная">Главная</a></li>
+					<li><a href="catalog/" title="Каталог тканей">Каталог тканей</a></li>
+					<li><a href="about/" title="О компании">О компании</a></li>
+					<li><a href="vakansii.html" title="Вакансии" class="active">Вакансии</a></li>
+					<li><a href="organizations/" title="Клиенты">Клиенты</a></li>
+					<li><a href="kontaktyi/" title="Контакты">Контакты</a></li>
 				</ul>
-				<div>
-					<div class="social_networks"> <a href="#"><i class="fa fa-instagram"></i></a></div>
-					<div class="social_networks"> <a href="#"><i class="fab fa-facebook-f"></i></a> </div>
-					<div class="social_networks"> <a href="#"><i class="fab fa-pinterest-p"></i></a> </div>
-					<div id="search" class="social_networks"> <a href="#"><i class="fa fa-search"></i></a>
-					</div>
-				</div>
-
+				<ul class="socials">
+					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+					<li><a href="#"><i class="fas fa-search"></i></a></li>
+				</ul>
 			</nav>
-
 		</aside>
 
 		<div class="col-xs-12 col-sm-8 col-md-9 right-column">
-			<!-- <div class="visible-xs use-bg row logo-wrap">
-				<a href="/" class="logo">
-					<img src="img/logo.png" alt="Novatex">
-					<br />Ткани, которые продают мебель!
-				</a>
-				<form class="search" action="results.html" method="get">
-					<input type="text" class="form-control search-field" placeholder="Поиск..." name="seacrh">
-					<button class="btn btn-xs"><img src="img/search-ico.png" alt="Найти" /></button>
-				</form>
-			</div> -->
 
 			<div class="col-xs-12 row page_order">
 				<ol class="breadcrumb" xmlns:v="http://rdf.data-vocabulary.org/#">
@@ -116,7 +88,7 @@
 				</ol>
 			</div>
 
-			<!-- <div class="content row"> -->
+			 <!-- <div class="content row">  -->
 			<div class="col-xs-12 headline main_h">
 				<h1>Вакансии</h1>
 
@@ -161,20 +133,16 @@
 
 
 			</section>
-			<!-- </div> -->
 			<section class="template">
 				<div class="h-content">
 					<h2> Свяжитесь <span> с нами</span></h2>
-					<p>Если у вас остались какие-либо вопросы, задайте их нам <br>
+			
+					<p>Если у вас остались какие-либо вопросы, задайте их нам
 						используя эту форму или позвоните по телефону.</p>
 				</div>
 
-				<div id="envelope_holder">
-					<!-- <img  class = "top_wave" src="img/border-curve-top.png" alt=""> -->
-					<!-- -->
-				</div>
-				<div id="envelope"><img src="/img/Layer 1.png" alt=""></div>
-				<!-- <hr> -->
+				<div id="envelope_holder"></div>
+				<div id="envelope"><img src="img/Layer 1.png" alt=""></div>
 			</section>
 
 			<section class="map">
@@ -182,21 +150,17 @@
 				<div class="template">
 					<div class="h-content">
 						<h2>Представители <span>в Украине</span></h2>
-						<p>Наведите курсор мыши на точку, <br>
-							чтобы увидеть город и контакты представителя.</p>
+						<!-- 
+							@info в тексте здесь не должно быть принудительного переноса с <br> 
+							@todo удалить <br> подправить стили
+						-->
+						<p> Наведите курсор мыши на точку,
+							чтобы увидеть город и контакты представителя.
+						</p>
 					</div>
 					<div class="map_holder">
-						<!-- <a id="link1" href="#"></a>
-						<a id="link2" href="#"></a>
-						<a id="link3" href="#"></a> -->
 						<a id="link4" href="#" data-title="КИЕВ, тел. +7 (495) 537-3078"></a>
-						<!-- <a id="link5" href="#"></a>
-						<a id="link6" href="#"></a>
-						<a id="link7" href="#"></a>
-						<a id="link8" href="#"></a>
-						<a id="link9" href="#"></a>
-						<a id="link10" href="#"></a> -->
-						<img src="/img/map-ukraine.png" alt="Карта">
+						<img src="img/map-ukraine.png" alt="Карта">
 					</div>
 				</div>
 
@@ -206,15 +170,17 @@
 					</div>
 
 					<div class="contact_info">
-						<p class="contacts">
-							<span class="brown">Телефоны:</span><br>
-							гор. +38 (044) 599-04-95 <br>
-							моб. +38 (066) 500-20-36 <br>
-							тел./факс: +38 (044) 500-17-95 <br>
-							<span id="mail" class="brown">E-mail:</span> novateks@info.ua
-							<br>
-							<span class="brown">Skype:</span> novateks
+
+
+
+						<p class="contacts"><span><b>Телефоны:</b></span>
+							<span>гор. +38 (044) 599-04-95
+								моб. +38 (066) 500-20-36
+								тел./факс: +38 (044) 500-17-95 </span>
+							<span><b>E-mail:</b> <a href="mailto:novateks@info.ua">novateks@info.ua</a></span>
+							<span><b>Skype:</b> <a href="skype:novateks?chat">novateks</a></span>
 						</p>
+
 					</div>
 
 					<a href="#">Контакты всех представителей</a>
@@ -222,15 +188,18 @@
 
 			</section>
 			<footer>
-				<div class="logo_holder">
-					<a href="#"><img src="/img/logo-footer.png" alt=""></a>
-				</div>
 				<div>
-					<div class="social_networks"> <a href="#"><i class="fa fa-instagram"></i></a></div>
-					<div class="social_networks"> <a href="#"><i class="fab fa-facebook-f"></i></a> </div>
-					<div class="social_networks"> <a href="#"><i class="fab fa-pinterest-p"></i></a> </div>
+					<a href="#"><img src="img/logo-footer.png" alt=""></a>
 				</div>
-				<div> <a href="#"> &copy; Novatex 2012-2017</a> </div>
+			<div >
+				<ul class="socials">
+					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+				</ul>
+			</div>
+				<div><span> &copy; Novatex 2012-2019</span>
+				</div>
 			</footer>
 		</div>
 
