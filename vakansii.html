@@ -15,6 +15,9 @@
 		content="ОФИС-МЕНЕДЖЕРТРЕБОВАНИЯ:Образование: высшее.Знание и умение работать с офисной техникой, программами MC Office, 1С.Знание украинского и русского" />
 	<meta name="viewport" content="width=device-width">
 
+	<!-- 
+		@todo привести в соответсвие с index.html
+	-->
 	<link rel="stylesheet" href="fonts/Lato/stylesheet.css">
 	<link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
 	<link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
@@ -34,12 +37,19 @@
 </head>
 
 <body>
+	<!-- 
+		зачем это здесь? согласились раньше убрать это
+	-->
 	<!--[if lt IE 7]>
                 <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
+
 	<div id="body">
 
+		<!-- 
+			зачем это здесь?
+		-->
 		<header>
 
 		</header>
@@ -94,8 +104,23 @@
 
 			</div>
 
+			<!-- 
+				@info уникальный контен можно поместить в тег <main>
+				@info зачем здесь класс "text"?
+				@info давай будем ипользовать для имен классов немного другую логику.
+				если у нас есть какая-то блок эллементов, то block-1,2,3,4...n. Такой блок есть и в другом макете.
+				@todo <section class="col-xs-12 text requirements"> заменить на <main><div class="block-1"> или что-то там по счеу
+			-->
 			<section class="col-xs-12 text requirements">
+				<!-- 
+					@info на странице должен быть только один <h1>
+					@todo <h1> заменить на <h2>
+				-->
 				<h1>Менеджер по работе с клиентами</h1>
+				<!-- 
+					@info пользователь через редактор вряд ли будет добавлять имя класса в тег <p>
+					@todo <p class="key_p"> заменить на <h3>
+				-->
 				<p class="key_p"> ТРЕБОВАНИЯ:</p>
 				<p> Пол: М / Ж 22-35 лет</p>
 				<p> Образование: среднее / высшее</p>
@@ -204,7 +229,8 @@
 		</div>
 
 	</div>
-
+	<!-- 
+		@todo добавить блок скриптов index.html
+	-->
 </body>
-
 </html>
