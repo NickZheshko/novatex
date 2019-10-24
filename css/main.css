@@ -238,6 +238,10 @@ aside nav li a.active {
 	position: relative;
 }
 
+aside nav li a.active:hover {
+	opacity: 1;
+}
+
 aside nav ul ul {
 	margin: 0px 39px 0px 40px;
 }
@@ -304,8 +308,6 @@ aside nav li li li a.active {
 	color: #7e4f25;
 	background: none;
 }
-
-
 
 /* slider */
 #slider {
@@ -578,10 +580,11 @@ aside nav li li li a.active {
 
 .more-btn a:hover {
 	background-color:  #BDD227;
-	color: #4B0082;
+	/* color: #4B0082;
 	font-size: 14px;
-	font-style: italic;
+	font-style: italic; */
 	box-shadow: 1px 3px 3px black;
+	font-weight: 900;
 }
  /* .with_wave>img {
 	position: relative;
@@ -621,6 +624,13 @@ aside nav li li li a.active {
 	left: 20%;
 	max-width: 170px;
 	opacity: 0.8;
+}
+
+.collection-1 .item span:hover {
+	border: 1px solid black;
+	opacity: 1;
+	font-weight: 900;
+	box-shadow: 1px 3px 3px black;
 }
 
 .collection-1 .item:last-child span:last-child {
@@ -691,7 +701,6 @@ aside nav li li li a.active {
 	text-align: left;
   }
   
-
 .collection-2 .item p {
 	font-size: 14px;
 	font-family: "Lato";
@@ -749,6 +758,7 @@ aside nav li li li a.active {
 	margin-bottom: 65px;
 }
 
+
 .trust+hr {
 	margin-top: 85px !important;
 }
@@ -796,27 +806,27 @@ aside nav li li li a.active {
 	margin-left: 13px;
 }
 
-.trust+.more-btn {
+.trust .more-btn {
 	position: absolute;
-	top: 78%;
-	left: 17.5%;
+    top: 85%;
+	left: 0.5%;
+	text-align: center;
 }
 
-
-.image_holder {
+.reviews img {
 	display: inline-flex;
 	justify-content: center;
 	border: 5px solid #E7E7E7;
-	;
 	border-radius: 50%;
-	font-size: 20px;
+	/* font-size: 20px; */
 	width: 70px;
 	height: 70px;
+	padding: 5px;
 	align-items: center;
 	cursor: pointer;
 }
 
-.image_holder+figcaption {
+.reviews figcaption {
 	display: block;
 	font-size: 12px;
 	color: #8D4E1C;
@@ -825,52 +835,52 @@ aside nav li li li a.active {
 	font-weight: bolder;
 }
 
-.images_changes {
+.trust .images_changes {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 	padding: 0;
 }
 
-.images_changes>div {
+.trust .images_changes>div {
 	display: flex;
 	justify-content: center;
 	/* align-self: center; */
 	align-items: center;
 	width: 50%;
+	position: relative;
 }
 
-
-.images_changes>div:before {
+.trust .images_changes>div:before {
 	content: "";
 	height: 1px;
 	background-color: #BDD227;
 	display: block;
 	position: absolute;
-	width: 205px;
-	bottom: 50%;
+	width: 200px;
+	top: 0.0001%;
 }
 
-.images_changes>div:first-child:before {
+.trust .images_changes>div:first-child:before {
 	display: none;
 }
 
-.images_changes>div:nth-child(2):before {
+.trust .images_changes>div:nth-child(2):before {
 	display: none;
 }
 
-.images_changes>div:nth-child(2n+1):after {
+.trust .images_changes>div:nth-child(2n+1):after {
 	content: "";
-	height: 40%;
+	height: 83%;
 	background-color: #BDD227;
 	display: block;
 	position: absolute;
 	width: 1px;
-	left: 26.1%;
+	right: 0.0001%;
 }
 
-.images_changes>div:nth-last-child(2):after {
-	height: 40%;
+.trust .images_changes>div:nth-last-child(2):after {
+	height: 83%;
 }
 
 .reviews div:last-child {
@@ -1099,7 +1109,6 @@ aside nav li li li a.active {
 	margin-top: 60px;
 }
 
-
 footer {
 	display: flex;
 	justify-content: space-between;
@@ -1140,15 +1149,6 @@ footer+hr {
 .socials li {
 	display: flex;
 	justify-content: center;
-	border: 5px solid #E7E7E7;
-	border-radius: 50%;
-	padding: 5px;
-	font-size: 20px;
-	width: 50px;
-	height: 50px;
-	align-items: center;
-	cursor: pointer;
-	margin-right: 10px;
 }
 
 nav .socials li:first-child {
@@ -1159,7 +1159,25 @@ nav .socials li:last-child {
 }
 
 .socials li a  {
-	text-align: center;
+	display: flex;
+	justify-content: center;
+	border: 5px solid #E7E7E7;
+	border-radius: 50%;
+	font-size: 20px;
+	width: 50px;
+	height: 50px;
+	align-items: center;
+	cursor: pointer;
+	margin-right: 10px;
+}
+
+.socials li a:hover {
+	text-decoration: none;
+	opacity: 1 !important;
+}
+
+.socials li a i:hover {
+	opacity: 0.5 !important;
 }
 
 .socials li a i {
@@ -1195,7 +1213,6 @@ footer .socials li {
 footer>a:last-child {
 	display: inline-block;
 	float: right;
-
 }
 
 .breadcrumb li a {
@@ -1239,7 +1256,7 @@ footer>a:last-child {
 	margin-bottom: 40px;
 }
 
-.requirements {
+.block-1 {
 	background-color: #F0F0F0;
 	width: calc(100% - 60px);
 	margin-left: 15px;
@@ -1248,20 +1265,21 @@ footer>a:last-child {
 	padding-left: 25px;
 	padding-bottom: 60px;
 	margin-bottom: 120px;
+	margin-top: 200px;
 }
 
-.requirements:after {
+.block-1:after {
 	display: block;
 	content: "";
 	position: absolute;
 	background-color: #D8D4D3;
-	width: 100%;
+	width: calc(100% - 90px);
 	height: 1px;
 	margin-top: 120px;
-	left: 0.5px;
+	left: 30px;
 }
 
-.requirements h1 {
+.block-1 h2 {
 	font-size: 24px;
 	padding-top: 55px;
 	text-transform: none;
@@ -1269,41 +1287,161 @@ footer>a:last-child {
 	font-weight: bold;
 }
 
-.requirements h1:after {
+.block-1 h2:after {
 	display: block;
 	content: "";
 	background-color: rgb(198, 213, 64);
-	margin-top: 10px;
+	margin-top: 15px;
 	margin-bottom: 25px;
 	width: 40px;
 	height: 5px;
 }
 
-.requirements ul {
+.block-1 ul {
 	padding-left: 15px;
 }
 
-.requirements ul li {
+.block-1 ul li {
 	line-height: 2.143;
 }
 
-.requirements p {
+.block-1 p {
 	margin-bottom: 5px;
 }
 
-.requirements .key_p {
+.block-1 h3 {
+	font-size: 14px;
+    color: rgb(78, 77, 77);
 	margin-top: 20px;
 	margin-bottom: 10px;
 }
 
-.requirements a {
+.block-1 a {
 	color: rgb(78, 77, 77);
 	border-bottom: 1px solid rgb(78, 77, 77);
 	text-decoration: none;
 }
 
-.requirements a:hover {
+.block-1 a:hover {
 	border-bottom: #F0F0F0;
+}
+
+.block-2 {
+	width: calc(100% - 50px);
+	padding-left: 15px;
+	margin-bottom: 130px;
+}
+
+.block-2 p {
+	line-height: 1.571;
+
+}
+
+.block-2 h3 {
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.block-2 .collection-2 {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+
+.block-2 .collection-2 .item{
+	width: 31.5%;
+}
+
+.block-2::after {
+	display: block;
+    content: "";
+    position: absolute;
+    background-color: #D8D4D3;
+    width: calc(100% - 90px);
+    height: 1px;
+    margin-top: 60px;
+    left: 30px;
+}
+
+.block-3 {
+	display: grid;
+	width: calc(100% - 60px);
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-rows: 125px 125px 125px 125px 125px 125px 125px;
+	text-align: center;
+	padding-left: 15px;
+	position: relative;
+}
+
+.block-3 .item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.block-3 .item:after {
+	content: "";
+    height: 80%;
+    background-color: #BDD227;
+    display: block;
+    position: absolute;
+    width: 1px;
+    right: 0.0001%;
+}
+
+.block-3 .item::before {
+	content: "";
+    height: 1px;
+    background-color: #BDD227;
+    display: block;
+    position: absolute;
+    width: 90%;
+    top: 0.0001%;
+}
+
+.block-3:after {
+	display: block;
+    content: "";
+    position: absolute;
+    background-color: #D8D4D3;
+    width: 100%;
+    height: 1px;
+	left: 15px;
+	top: 99%;
+	margin-top: 50px;
+}
+
+.block-3 .item:nth-child(1):before {
+	display: none;
+}
+
+.block-3 .item:nth-child(2):before {
+	display: none;
+}
+
+.block-3 .item:nth-child(3):before {
+	display: none;
+}
+
+.block-3 .item:nth-child(4):before {
+	display: none;
+}
+
+.block-3 .item:nth-child(4n):after {
+	display: none;
+}
+
+.block-3 + .template .h-content {
+	margin-top: 60px !important;
+	margin-bottom: 40px !important;
+}
+
+.block-3 + .template .h-content h2 {
+	margin-bottom: 5px;
 }
 
 .rectangle_without_bottom {
@@ -1317,7 +1455,6 @@ footer>a:last-child {
 	top: 1px;
 	background: transparent;
 }
-
 
 .pointer {
 	display: block;
@@ -1457,7 +1594,7 @@ section.promo .sale a.photo .pointer2 {
 	float: right;
 }
 
-.clothes_catalog {
+.collection-3 {
 	display: grid;
 	width: 100%;
 	grid-template-columns: 30% 30% 30%;
@@ -1472,18 +1609,18 @@ section.promo .sale a.photo .pointer2 {
 	margin-bottom: 115px;
 }
 
-.clothes_catalog .item {
+.collection-3 .item {
 	display: flex;
 	justify-content: center;
 	width: 100%;
 }
 
-.clothes_catalog .item img {
+.collection-3 .item img {
 	width: 100%;
 	height: 100%;
 }
 
-.clothes_catalog .item span {
+.collection-3 .item span {
 	display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -1506,60 +1643,67 @@ section.promo .sale a.photo .pointer2 {
 	opacity: 0.8;
 }
 
-.clothes_catalog .item:first-child {
+.collection-3 .item span:hover {
+	border: 1px solid black;
+	opacity: 1;
+	font-weight: 900;
+	box-shadow: 1px 3px 3px black;
+}
+
+.collection-3 .item:first-child {
 	grid-column: 1 / 3;
 	grid-row: 1 / 2;
 }
 
-.clothes_catalog .item:first-child span {
+.collection-3 .item:first-child span {
 	top: 37%;
 	left: 35.5%; 
 	color: red;
 }
 
-.clothes_catalog .item:nth-child(2) {
+.collection-3 .item:nth-child(2) {
 	grid-column: 3 / 4;
 	grid-row: 1 / 3;
 }
  
-.clothes_catalog .item:nth-child(2) span {
+.collection-3 .item:nth-child(2) span {
 	top: 44%;
 	left: 18.5%;
 }
 
-.clothes_catalog .item:nth-child(3) {
+.collection-3 .item:nth-child(3) {
 	grid-column: 1 / 2;
 	grid-row: 2 / 3;
 }
 
-.clothes_catalog .item:nth-child(4) {
+.collection-3 .item:nth-child(4) {
 	grid-column: 2 / 3;
 	grid-row: 2 / 3;
 }
 
 
- .clothes_catalog .item:nth-child(5) {
+ .collection-3 .item:nth-child(5) {
 	grid-column: 1 / 2;
 	grid-row: 3 / 4;
 }
 
-.clothes_catalog .item:nth-child(6) {
+.collection-3 .item:nth-child(6) {
 	grid-column: 2 / 3;
 	grid-row: 3 / 4;
 }
 
-.clothes_catalog .item:nth-child(7) {
+.collection-3 .item:nth-child(7) {
 	grid-column: 3 / 4;
 	grid-row: 3 / 4;
 } 
 
 
-.clothes_catalog .with_wave {
+.collection-3 .with_wave {
 	position: relative;
 }
 
-.clothes_catalog .with_wave:after,
-.clothes_catalog .with_wave:before {
+.collection-3 .with_wave:after,
+.collection-3 .with_wave:before {
 	content: "";
 	background-repeat: repeat-x;
 	width: 100%;
@@ -1568,17 +1712,17 @@ section.promo .sale a.photo .pointer2 {
 	left: 0;
 }
 
-.clothes_catalog .with_wave:after {
+.collection-3 .with_wave:after {
 	bottom: 0;
 	background-image: url(../img/border-curve-bottom.png);
 }
 
-.clothes_catalog .with_wave:before {
+.collection-3 .with_wave:before {
 	top: 0;
 	background-image: url(../img/border-curve-top.png);
 }
 
-.clothes_catalog::after {
+.collection-3::after {
 	display: block;
     content: "";
     position: absolute;

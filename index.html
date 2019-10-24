@@ -17,12 +17,12 @@
 		<link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="fonts/font-awesome-4.0.3/css/font-awesome.min.css">
 
-		Спрашивается: зачем?
+		Спрашивается: зачем? - Ответ: "каждый из подключенных шрифтов имеют уникальную иконку социальной сети, которая соответсвует макету.
+		Если я удалю один из шрифтов, то иконка будет другая. Как тогда лучше поступить в этой ситуации?"
 		Оставь один.
 		<link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
 		
 	-->
-
 	<link rel="stylesheet" href="fonts/Lato/stylesheet.css">
 	<link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
 	<link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
@@ -53,10 +53,7 @@
 				</span>
 			</section>
 			<nav>
-				<!-- 
-					@todo мне не очень нравиться эффект наведения для активного элемента в меню
-					Давай не будем использовать никакого эффекта.
-				-->
+
 				<ul class="menu">
 					<li><a href="/" title="Главная" class="active">Главная</a></li>
 					<li><a href="catalog/" title="Каталог тканей">Каталог тканей</a></li>
@@ -66,11 +63,6 @@
 					<li><a href="kontaktyi/" title="Контакты">Контакты</a></li>
 				</ul>
 
-				<!-- 
-					@todo надо переделать стили. Круглая рамка должна быть для тега <a>, а не для <li>
-					и сейчас получается, что область попадания по тегу а очень маленькая. Пользователь воспринимает
-					весь элемент, как ссылку. 
-				-->
 				<ul class="socials">
 					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -131,11 +123,6 @@
 						который постоянно обновляется</p>
 				</div>
 
-
-				<!-- 
-					@todo добавить анимацию на кнопки
-				-->
-
 				<div class="collection-1">
 					<div class="item with_wave">
 						<a href="">
@@ -157,10 +144,6 @@
 					</div>
 				</div>
 
-				<!-- 
-					@todo мне не очень нравиться эффект наведения
-					Давай анимацией не будем трогать сам текст "показать все"
-				-->
 				<div class="more-btn">
 					<a href="#">показать все</a>
 				</div>
@@ -231,7 +214,13 @@
 				</div>
 
 				<div class="trust">
+
 					<div class="images_changes">
+						<!--Тут подправил стили для псевдоэлементов, теперь ведут себя корректно при добавлении новых картинок
+					Единственное, что если количество картинок будет нечетное, то псевдоэлементы добавятся и к нему, тогда это будет выглядеть очень странно
+					Также при добавлении новых картинок съезжает немного кнопка "все клиенты". Я пытался решить эту проблему с помощью добавления блока "wrap",
+					но проблему это не решила, поэтому не стал его оставлять-->
+						<div><img src="img/icon/facebook.png" alt=""></div>
 						<div><img src="img/icon/facebook.png" alt=""></div>
 						<div><img src="img/icon/facebook.png" alt=""></div>
 						<div><img src="img/icon/facebook.png" alt=""></div>
@@ -239,34 +228,22 @@
 					</div>
 
 					<div class="reviews">
-						<!-- 
-							@todo тут надо избавиться от <div> и оставить только
-							<h2>Отзывы <span>наших клиентов</span></h2>
-							<div> здесь избыточная струтура
-						-->
-						<div>
-							<h2>Отзывы <span>наших клиентов</span></h2>
-						</div>
+						<h2>Отзывы <span>наших клиентов</span></h2>
 						<p>
 							"Спасибо компании "Новатекс"
 							за высоко-профессиональную работу"
 						</p>
 						<figure>
-							<!-- 
-								@info старайся называть имена файлов в нижнем регистре и без пробелов layer_3.png
-								в windows и в mac layer_3.png = Layer_3.png, а в линукс - это разные файлы.
-								
-								@todo заменить <div class="image_holder"><img src="img/Layer 3.png" alt=""></div> на <img src="img/Layer 3.png" alt="">
-							-->
-							<div class="image_holder"><img src="img/Layer 3.png" alt=""></div>
+
+							<img src="img/layer_3.png" alt="">
 							<figcaption> Компания “Константа”</figcaption>
 						</figure>
 					</div>
+					<div class="more-btn">
+						<a href="#">все клиенты</a>
+					</div>
+				</div>
 
-				</div>
-				<div class="more-btn">
-					<a href="#">все клиенты</a>
-				</div>
 			</div>
 			<section class="template">
 				<div class="h-content">
@@ -276,11 +253,10 @@
 				</div>
 
 				<div id="envelope_holder"></div>
-				<div id="envelope"><img src="img/Layer 1.png" alt=""></div>
+				<div id="envelope"><img src="img/layer_1.png" alt=""></div>
 			</section>
 
 			<section class="map">
-
 				<div class="template">
 					<div class="h-content">
 						<h2>Представители <span>в Украине</span></h2>
@@ -300,13 +276,10 @@
 					</div>
 
 					<div class="contact_info">
-						<p class="contacts">
-							<span><b>Телефоны:</b></span>
-							<span>
-								гор. +38 (044) 599-04-95
-								<br>моб. +38 (066) 500-20-36
-								<br>тел./факс: +38 (044) 500-17-95 
-							</span>
+						<p class="contacts"><span><b>Телефоны:</b></span>
+							<span>гор. +38 (044) 599-04-95
+								моб. +38 (066) 500-20-36
+								тел./факс: +38 (044) 500-17-95 </span>
 							<span><b>E-mail:</b> <a href="mailto:novateks@info.ua">novateks@info.ua</a></span>
 							<span><b>Skype:</b> <a href="skype:novateks?chat">novateks</a></span>
 						</p>
@@ -314,19 +287,13 @@
 
 					<a href="#">Контакты всех представителей</a>
 				</div>
-
 			</section>
 
 			<footer>
 				<div>
 					<a href="#"><img src="img/logo-footer.png" alt=""></a>
 				</div>
-				<div >
-					<!-- 
-						@todo надо переделать стили. Круглая рамка должна быть для тега <a>, а не для <li>
-						и сейчас получается, что область попадания по тегу а очень маленькая. Пользователь воспринимает
-						весь элемент, как ссылку. 
-					-->
+				<div>
 					<ul class="socials">
 						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 						<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -352,4 +319,5 @@
 	<script src="js/main.js"></script>
 
 </body>
+
 </html>
