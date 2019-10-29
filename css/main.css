@@ -1735,6 +1735,106 @@ section.promo .sale a.photo .pointer2 {
     top: 99%;
 }
 
+.block-4 {
+	padding-left: 15px;
+}
+
+.block-4 h2 {
+	font-size: 24px !important;
+	margin-left: 30px;
+}
+
+.block-4 h2::after {
+	margin: 20px 0 0 0;
+}
+
+.timetable {
+	width: calc(100% - 45px);
+	height: 275px;
+	padding-top: 40px;
+	background-color: #F0F0F0;
+	padding-left: 30px;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 1.3;
+	display: flex;
+	justify-content: flex-start;
+	margin-bottom: 50px;
+}
+
+.timetable > div:first-child {
+	margin-right: 140px;
+}
+
+.timetable b {
+	font-size: 24px;
+}
+
+.timetable a {
+	display: inline-block;
+	color: black;
+	border-bottom: 1px solid black;
+	margin-top: 15px;
+}
+
+.timetable a:hover {
+	border-bottom: none !important;
+	text-decoration: none !important;
+}
+
+.timetable .item {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #C1D628;
+	margin-right: 6px;
+}
+
+.timetable > div:nth-child(2) {
+	line-height: 1.9;
+}
+
+.timetable .item:nth-child(6),
+.timetable .item:nth-child(7) {
+	background: #F0F0F0;
+	border: 3px solid #C1D628;;
+}
+
+.districts {
+	display: grid;
+	width: calc(100% - 15px);
+	grid-template-columns: 30% 30% 30%;
+	grid-template-rows: 215px 215px;
+	grid-gap: 31px;
+	position: relative;
+	margin-bottom: 110px;
+}
+
+.districts .item {
+	background: #F0F0F0;
+	white-space: pre-line;
+	padding-left: 30px;
+	line-height: 1.6;
+}
+
+.districts .item h3 {
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.districts::after {
+	display: block;
+    content: "";
+    position: absolute;
+    background-color: #D8D4D3;
+    width: calc(100% - 30px);
+    height: 1px;
+	top: 99%;
+	margin-top: 60px;
+}
+
 .catalog .sepline {
 	margin-bottom: 30px;
 }
