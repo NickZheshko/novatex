@@ -93,7 +93,6 @@ aside .aside-contacts:after {
 }
 
 aside .phone {
-	/* font-weight: bold; */
 	display: inline-block;
 	margin-top: 5px;
 	font-size: 16px;
@@ -106,7 +105,10 @@ aside .phone b {
 }
 
 aside .logo {
-	display: block;
+	display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+	width: 100%;
 	margin: 20px auto 25px;
 	text-align: center;
 	color: #7e4f25;
@@ -120,8 +122,9 @@ aside .logo:hover {
 
 aside .logo img {
 	margin-bottom: 15px;
-	width: 265px;
-	height: 95px;
+	max-width: 100%;
+	height: auto;
+	display: block;
 }
 
 aside .logo span {
