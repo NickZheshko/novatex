@@ -1,6 +1,12 @@
 /* ==========================================================================
    Author's custom styles (bg.png)
    ========================================================================== */
+
+:root {
+	--green: #BDD227;
+}
+
+
 html {
 	height: 100%;
 }
@@ -41,51 +47,6 @@ p {
 	height: 11px;
 	width: 100%;
 }
-
-/*
-        @ask телефоны и "или" не одинаковый цвет
-*/
-/* #topinfo {
-        background: url(../img/bg-top.png) repeat-x;
-        height: 42px;
-        padding: 6px 0;
-}
-
-#topinfo .menu-ico {
-	margin-left: -15px;
-}
-
-#topinfo .phones {
-	color: #f1f1f1;
-	background: url(../img/phone.png) 0 5px no-repeat;
-}
-
-#topinfo .phone {
-	font: italic 16px/26px "Trebuchet MS", sans-serif;
-	margin-left: 45px;
-}
-
-#topinfo .phone:first-child {
-	margin-left: 33px;
-}
-
-#topinfo .phone span {
-	font: italic 20px/26px "Trebuchet MS", sans-serif;
-}
-
-#topinfo .auth {
-	color: #dddddc;
-	font: normal 14px/26px "Trebuchet MS", sans-serif;
-}
-
-#topinfo .auth a {
-	color: #c5d53c;
-}
-
-#topinfo .lang {
-        padding: 2px 0;
-        text-align: right;
-} */
 
 aside {
 	padding: 20px 0;
@@ -215,6 +176,12 @@ aside nav li a {
 	display: block;
 	padding: 7px 0 7px;
 	position: relative;
+	transition: all 0.3s ease-in-out;
+}
+
+aside nav li a:hover {
+	opacity: 0.5;
+	color: #7e4f25;
 }
 
 aside nav .social_networks a i {
@@ -222,10 +189,6 @@ aside nav .social_networks a i {
 	font-size: 18px;
 }
 
-aside nav li a:hover {
-	opacity: 0.5;
-	color: #7e4f25;
-}
 
 aside nav li a.active {
 	color: #fff;
@@ -578,21 +541,13 @@ aside nav li li li a.active {
 	width: 165px;
 	box-shadow: 0 2px #886D56;
 	margin-bottom: 45px !important;
-	transition: all 500ms ease-in-out;
+	transition: all 300ms ease-in-out;
 }
 
 .more-btn a:hover {
-	background-color: #BDD227;
-	/* color: #4B0082;
-	font-size: 14px;
-	font-style: italic; */
-	box-shadow: 1px 3px 3px black;
-	font-weight: 900;
+	background-color: var(--green);
+	box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.6);
 }
-
-/* .with_wave>img {
-	position: relative;
-}  */
 
 .collection-1 {
 	display: flex;
@@ -628,16 +583,17 @@ aside nav li li li a.active {
 	left: 20%;
 	max-width: 170px;
 	opacity: 0.8;
+	transition: all 0.3s ease-in-out;
 }
 
 .collection-1 .item span:hover {
-	border: 1px solid black;
 	opacity: 1;
-	font-weight: 900;
-	box-shadow: 1px 3px 3px black;
+	box-shadow: 1px 3px 3px rgb(0, 0, 0, 0.4);
+	color: #ffffff;
+	background: rgba(193, 214, 43, 0.9);
 }
 
-.collection-1 .item:last-child span:last-child {
+.collection-1 .item.sale span {
 	color: red;
 }
 
@@ -663,12 +619,13 @@ aside nav li li li a.active {
 
 .with_wave:after {
 	bottom: 0;
-	background-image: url(../img/border-curve-bottom.png);
+	background-image: url(../img/border-curve-bottom-white.png);
+	background-position: left bottom;
 }
 
 .with_wave:before {
 	top: 0;
-	background-image: url(../img/border-curve-top.png);
+	background-image: url(../img/border-curve-top-white.png);
 }
 
 .collection-2 {
@@ -860,7 +817,7 @@ aside nav li li li a.active {
 .trust .images_changes>div:before {
 	content: "";
 	height: 1px;
-	background-color: #BDD227;
+	background-color: var(--green);
 	display: block;
 	position: absolute;
 	width: 200px;
@@ -878,7 +835,7 @@ aside nav li li li a.active {
 .trust .images_changes>div:nth-child(2n+1):after {
 	content: "";
 	height: 83%;
-	background-color: #BDD227;
+	background-color: var(--green);
 	display: block;
 	position: absolute;
 	width: 1px;
@@ -1398,7 +1355,7 @@ footer>a:last-child {
 .block-3 .item:after {
 	content: "";
 	height: 80%;
-	background-color: #BDD227;
+	background-color: var(--green);
 	display: block;
 	position: absolute;
 	width: 1px;
@@ -1408,7 +1365,7 @@ footer>a:last-child {
 .block-3 .item::before {
 	content: "";
 	height: 1px;
-	background-color: #BDD227;
+	background-color: var(--green);
 	display: block;
 	position: absolute;
 	width: 90%;
@@ -1551,11 +1508,11 @@ section.promo .promo a.photo i {
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: url(../img/border-curve-top.png) left top repeat-x;
+	background: url(../img/border-curve-top-white.png) left top repeat-x;
 }
 
 section.promo .promo a.photo i i {
-	background: url(../img/border-curve-bottom.png) left bottom repeat-x;
+	background: url(../img/border-curve-bottom-white.png) left bottom repeat-x;
 }
 
 section.promo .promo a.photo .pointer2 {
@@ -1723,12 +1680,12 @@ section.promo .sale a.photo .pointer2 {
 
 .collection-3 .with_wave:after {
 	bottom: 0;
-	background-image: url(../img/border-curve-bottom.png);
+	background-image: url(../img/border-curve-bottom-white.png);
 }
 
 .collection-3 .with_wave:before {
 	top: 0;
-	background-image: url(../img/border-curve-top.png);
+	background-image: url(../img/border-curve-top-white.png);
 }
 
 .collection-3::after {
@@ -2093,11 +2050,11 @@ section.promo .sale a.photo .pointer2 {
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: url(../img/border-curve-top.png) left top repeat-x;
+	background: url(../img/border-curve-top-white.png) left top repeat-x;
 }
 
 .catalog a.photo i i {
-	background: url(../img/border-curve-bottom.png) left bottom repeat-x;
+	background: url(../img/border-curve-bottom-white.png) left bottom repeat-x;
 }
 
 .catalog .item .sepline {
@@ -2194,11 +2151,11 @@ section.promo .sale a.photo .pointer2 {
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: url(../img/border-curve-top.png) left top repeat-x;
+	background: url(../img/border-curve-top-white.png) left top repeat-x;
 }
 
 .collection .photo i i {
-	background: url(../img/border-curve-bottom.png) left bottom repeat-x;
+	background: url(../img/border-curve-bottom-white.png) left bottom repeat-x;
 }
 
 .collection .photo .pointer2 {
@@ -2266,7 +2223,7 @@ section.promo .sale a.photo .pointer2 {
 }
 
 .news .item {
-	background: #fff url(../img/border-curve-bottom.png) left bottom repeat-x;
+	background: #fff url(../img/border-curve-bottom-white.png) left bottom repeat-x;
 	display: block;
 	padding-bottom: 15px;
 	color: #4e4d4d;
@@ -2484,7 +2441,7 @@ section.promo .sale a.photo .pointer2 {
 }
 
 footer .footer {
-	background: url(../img/border-curve-top-white.png) top left repeat-x;
+	background: url(../img/border-curve-top-white-white.png) top left repeat-x;
 	color: #bdd753;
 	padding: 45px 0 0;
 }
