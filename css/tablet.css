@@ -1,0 +1,163 @@
+
+.news .item .date {
+    top: 53%
+}
+
+.worktime {
+    float: left;
+}
+
+.on_image {
+    width: 10vw;
+}
+
+
+.on_image {
+    font-size: 1vw;
+}
+
+.adaptive_span {
+    width: 1vw;
+}
+
+.use-bg {
+    background-position: left bottom;
+}
+
+.news .item .date {
+    top: 47%
+}
+
+footer .footer .col-sm-6:nth-child(odd) {
+    clear: left;
+}
+
+.worktime {
+    float: right;
+}
+
+.filials div:nth-child(2n+1) {
+    clear: left;
+}
+
+.on_image {
+    width: 12vw;
+}
+
+.advantages {
+    width: 12vw;
+}
+
+.on_image {
+    font-size: 1vw;
+}
+
+.adaptive span {
+    width: 0.5vw;
+}
+
+@media only screen and (min-width: 875px) {
+    #body {
+        padding-top: 0;
+    }
+
+	.news .item .date {
+		top: 53%
+	}
+
+	.adaptive span {
+		width: 0.5vw;
+	}
+
+	.on_image {
+		width: 12vw;
+    }
+    aside {
+        display: block;
+        height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        width: 300px;
+        position: fixed;
+    }
+    .right-column {
+        width: calc(100% - 300px);
+        margin-left: 300px;
+    }
+    .topbar {
+        display: none;
+    }
+    #slider .ellipse {
+        background-color: #C1D628;
+        border-radius: 50%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 20vw;
+        height: 20vw;
+        top: 1.75vw;
+        left: 1.75vw;
+        box-shadow: -1.6vw 1.6vw 7px 1px rgba(0, 0, 0, 0.15);
+    }
+    
+    #slider .ellipse span {
+        font-size: 1.9vw;
+        padding: 2vw;
+    }
+    
+    #slider .ellipse span span {
+        font-size: 3.2vw;
+    }
+    .collection-1 .item,
+    .collection-2 .item {
+        width: calc(50% - 24px);
+    }
+    .collection-1.collection-1--main .item:last-child,
+    .collection-2.collection-2--main .item:last-child {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+	.use-bg {
+		background-position: right bottom;
+	}
+
+	.news .item .date {
+		top: 49%
+	}
+
+	footer .footer .col-sm-6 {
+		clear: none !important;
+	}
+
+	footer .copyright .links {
+		padding-top: 13px;
+	}
+
+	.filials div:nth-child(2n+1) {
+		clear: none;
+	}
+
+	.filials div:nth-child(3n+1) {
+		clear: left;
+	}
+
+	.collection .items .item:nth-child(2n+1) {
+		clear: none;
+	}
+
+	.collection .items .item:nth-child(3n+1) {
+		clear: left;
+	}
+
+	.on_image {
+		width: 15vw;
+	}
+
+	.adaptive span {
+		width: 0.2vw;
+	}
+}

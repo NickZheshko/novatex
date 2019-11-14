@@ -14,6 +14,11 @@ $(document).ready(function () {
         });
     }
 
+    $('.js-hamburger').on('click', function(){
+        $(this).toggleClass('is-active');
+    });
+    
+
     $('input[name=jscode]').val('1');
     bannerLoadImg();
 });
@@ -31,10 +36,10 @@ function bannerLoadImg() {
         if (sWidth > 0) {
             dataProp = 'mobile';
         }
-        if (sWidth > 360 && el.data('tablet') != undefined) {
+        if (sWidth >= 767 && el.data('tablet') != undefined) {
             dataProp = 'tablet';
         }
-        if (sWidth > 767 && el.data('desktop') != undefined) {
+        if (sWidth >= 875 && el.data('desktop') != undefined) {
             dataProp = 'desktop';
         }
         if (el.attr('src') != el.data(dataProp) && el.data(dataProp)) {
