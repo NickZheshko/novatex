@@ -13,14 +13,14 @@
 	<link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
 	<link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="fonts/font-awesome-4.0.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="js/vendor/slick/slick.css" />
 	<link rel="stylesheet" href="js/vendor/slick/slick-theme.css" />
 	<link rel="stylesheet" href="js/vendor/fancybox/jquery.fancybox.css" />
 
 	<link rel="stylesheet" href="css/mobile.css">
-    <link rel="stylesheet" href="css/tablet.css" media="all and (min-width: 767px)">
-    <link rel="stylesheet" href="css/desktop.css" media="all and (min-width: 1100px)">
+	<link rel="stylesheet" href="css/tablet.css" media="all and (min-width: 700px)">
+	<link rel="stylesheet" href="css/desktop.css" media="all and (min-width: 1100px)">
 
 </head>
 
@@ -61,7 +61,7 @@
 		</aside>
 
 		<div class="right-column">
-			<div id="slider" class="use-bg row">
+			<div id="slider">
 				<div class="slider-items">
 					<div>
 						<img src="img/blank.png" 
@@ -71,7 +71,7 @@
 							class="lzy" alt="Мебель">
 					</div>
 					<div>
-						<img src="img/blank.png" 
+						<img src="img/blank.png"
 							data-mobile="img/sofas/mobile-slider.jpg"
 							data-tablet="img/sofas/tablet-slider.jpg" 
 							data-desktop="img/sofas/slider-new.jpg"
@@ -79,12 +79,24 @@
 					</div>
 					<div>
 						<img src="img/blank.png" 
-							data-mobile="img/mobile-slider.jpg"
+							data-mobile="img/sofas/mobile-slider.jpg"
 							data-tablet="img/sofas/tablet-slider.jpg" 
 							data-desktop="img/sofas/slider-new.jpg"
 							class="lzy" alt="Мебель">
 					</div>
 				</div>
+				<section class="aside-info">
+					<a href="#" class="logo">
+						<img src="img/logo.png" alt="Novatex">
+						<span> Ткани, которые продают мебель!</span>
+					</a>
+					<span class="aside-contacts">
+						Оптовые продажи тканей
+						для мягкой мебели
+						<span class="phone">+38 (044) <b>599-04-95</b></span>
+						<span class="phone">+38 (044) <b>500-17-95</b></span>
+					</span>
+				</section>
 				<div class="ellipse">
 					<span><span>ТКАНИ,</span> КОТОРЫЕ ПРОДАЮТ МЕБЕЛЬ!</span>
 				</div>
@@ -131,10 +143,7 @@
 						</a>
 					</div>
 				</div>
-
-				<div class="more-btn">
-					<a href="#">показать все</a>
-				</div>
+				<a href="#" class="btn btn--brown btn--more">показать все</a>
 			</div>
 
 
@@ -146,61 +155,64 @@
 				</div>
 
 
-				<div class="collection-2 collection-2--main">
-					<div class="item with_wave">
-						<span class="num">01</span>
-						<h2>Постоянное наличие
-							товара на складе</h2>
-						<p>Вы можете не беспокоится,
-							что нужного товара не окажется
-							на складе и вам придется ожидать
-							его поставки. Мы заботимся о
-							том, чтобы он был в наличии
-							тогда, когда вам это
-							необходимо.</p>
-					</div>
+				<div class="collection-2 collection-2--main js-slider-01">
+					<!-- <div class=""> -->
+						<div class="item with_wave">
+							<span class="num">01</span>
+							<h2>Постоянное наличие
+								товара на складе</h2>
+							<p>Вы можете не беспокоится,
+								что нужного товара не окажется
+								на складе и вам придется ожидать
+								его поставки. Мы заботимся о
+								том, чтобы он был в наличии
+								тогда, когда вам это
+								необходимо.</p>
+						</div>
 
-					<div class="item with_wave">
-						<span class="num">02</span>
-						<h2>Широкий ассортимент
-							продукции</h2>
-						<p> Вы можете не беспокоится,
-							что нужного товара не окажется
-							на складе и вам придется ожидать
-							его поставки. Мы заботимся о
-							том, чтобы он был в наличии
-							тогда, когда вам это
-							необходимо.
-						</p>
-					</div>
+						<div class="item with_wave">
+							<span class="num">02</span>
+							<h2>Широкий ассортимент
+								продукции</h2>
+							<p> Вы можете не беспокоится,
+								что нужного товара не окажется
+								на складе и вам придется ожидать
+								его поставки. Мы заботимся о
+								том, чтобы он был в наличии
+								тогда, когда вам это
+								необходимо.
+							</p>
+						</div>
 
-					<div class="item with_wave">
-						<span class="num">03</span>
-						<h2>Качественный
-							сервис</h2>
-						<p>Мы прислушиваемся к интересам
-							наших клиентов, поэтому
-							постоянно совершенствуем свою
-							работу. Уникальный коллектив
-							профессионалов с многолетним
-							опытом в мебельном бизнесе
-							гарантирует высокое качество
-							своей работы.</p>
-					</div>
+						<div class="item with_wave">
+							<span class="num">03</span>
+							<h2>Качественный
+								сервис</h2>
+							<p>Мы прислушиваемся к интересам
+								наших клиентов, поэтому
+								постоянно совершенствуем свою
+								работу. Уникальный коллектив
+								профессионалов с многолетним
+								опытом в мебельном бизнесе
+								гарантирует высокое качество
+								своей работы.</p>
+						</div>
 
-					<div class="item with_wave">
-						<span class="num">04</span>
-						<h2>Качественный
-							сервис</h2>
-						<p>Мы прислушиваемся к интересам
-							наших клиентов, поэтому
-							постоянно совершенствуем свою
-							работу. Уникальный коллектив
-							профессионалов с многолетним
-							опытом в мебельном бизнесе
-							гарантирует высокое качество
-							своей работы.</p>
-					</div>
+						<div class="item with_wave">
+							<span class="num">04</span>
+							<h2>Качественный
+								сервис</h2>
+							<p>Мы прислушиваемся к интересам
+								наших клиентов, поэтому
+								постоянно совершенствуем свою
+								работу. Уникальный коллектив
+								профессионалов с многолетним
+								опытом в мебельном бизнесе
+								гарантирует высокое качество
+								своей работы.</p>
+						</div>
+					<!-- </div> -->
+
 				</div>
 
 
@@ -217,44 +229,69 @@
 
 				<div class="trust">
 
-					<div class="images_changes">
-						<!--Тут подправил стили для псевдоэлементов, теперь ведут себя корректно при добавлении новых картинок
-					Единственное, что если количество картинок будет нечетное, то псевдоэлементы добавятся и к нему, тогда это будет выглядеть очень странно
-					Также при добавлении новых картинок съезжает немного кнопка "все клиенты". Я пытался решить эту проблему с помощью добавления блока "wrap",
-					но проблему это не решила, поэтому не стал его оставлять-->
-						<div><img src="img/icon/facebook.png" alt=""></div>
-						<div><img src="img/icon/facebook.png" alt=""></div>
-						<div><img src="img/icon/facebook.png" alt=""></div>
-						<div><img src="img/icon/facebook.png" alt=""></div>
+					<div class="trustby">
+						<div class="trustby-wrap">
+							<div><img src="img/icon/facebook.png" alt=""></div>
+							<div><img src="img/icon/facebook.png" alt=""></div>
+							<div><img src="img/icon/facebook.png" alt=""></div>
+							<div><img src="img/icon/facebook.png" alt=""></div>
+						</div>
+						<a href="#" class="btn btn--brown btn--more">все клиенты</a>
 					</div>
 
 					<div class="reviews">
 						<h2>Отзывы <span>наших клиентов</span></h2>
-						<p>
-							"Спасибо компании "Новатекс"
-							за высоко-профессиональную работу"
-						</p>
-						<figure>
+						<div class="js-reviews-slider">
+							<div>
+								<p>
+									"Спасибо компании "Новатекс"
+									за высоко-профессиональную работу"
+								</p>
+								<figure>
 
-							<img src="img/layer_3.png" alt="">
-							<figcaption> Компания “Константа”</figcaption>
-						</figure>
-					</div>
-					<div class="more-btn">
-						<a href="#">все клиенты</a>
+									<img src="img/layer_3.png" alt="">
+									<figcaption> Компания “Константа”</figcaption>
+								</figure>
+							</div>
+							<div>
+								<p>
+									"Спасибо компании "Новатекс"
+									за высоко-профессиональную работу"
+								</p>
+								<figure>
+
+									<img src="img/layer_3.png" alt="">
+									<figcaption> Компания “Константа”</figcaption>
+								</figure>
+							</div>
+						</div>
 					</div>
 				</div>
 
 			</div>
-			<section class="template">
+			<section class="template template--contact">
 				<div class="h-content">
 					<h2> Свяжитесь <span> с нами</span></h2>
 					<p>Если у вас остались какие-либо вопросы, задайте их нам
 						используя эту форму или позвоните по телефону.</p>
 				</div>
-
-				<div id="envelope_holder"></div>
-				<div id="envelope"><img src="img/layer_1.png" alt=""></div>
+				<div class="contact-form">
+					<form action="">
+						<div class="input">
+							<label for="">Ваше имя</label>
+							<input type="text">
+						</div>
+						<div class="input">
+							<label for="">Email</label>
+							<input type="email">
+						</div>
+						<div class="textarea">
+							<label for="">Сообщение</label>
+							<textarea name="" id=""></textarea>
+						</div>
+						<button type="submit" class="btn">Отправить</button>
+					</form>
+				</div>
 			</section>
 
 			<section class="map">
@@ -275,15 +312,21 @@
 					<div class="h-content">
 						<h2>Контакты<span> в Киеве</span></h2>
 					</div>
-
 					<div class="contact_info">
-						<p class="contacts"><span><b>Телефоны:</b></span>
-							<span>гор. +38 (044) 599-04-95
-								моб. +38 (066) 500-20-36
-								тел./факс: +38 (044) 500-17-95 </span>
-							<span><b>E-mail:</b> <a href="mailto:novateks@info.ua">novateks@info.ua</a></span>
-							<span><b>Skype:</b> <a href="skype:novateks?chat">novateks</a></span>
-						</p>
+						<span><b>Телефоны:</b></span>
+						<span>
+							гор. +38 (044) 599-04-95
+							<br>моб. +38 (066) 500-20-36
+							<br>тел./факс: +38 (044) 500-17-95
+						</span>
+						<span>
+							<b>E-mail:</b>
+							<a href="mailto:novateks@info.ua">novateks@info.ua</a>
+						</span>
+						<span>
+							<b>Skype:</b>
+							<a href="skype:novateks?chat">novateks</a>
+						</span>
 					</div>
 
 					<a href="#">Контакты всех представителей</a>
@@ -316,6 +359,24 @@
 		</div>
 		<div class="phone">+38 (066) 500-20-36</div>
 	</div>
+	<div class="nav-mobile">
+		<nav>
+			<ul>
+				<li><a href="/" title="Главная" class="active">Главная</a></li>
+				<li><a href="catalog/" title="Каталог тканей">Каталог тканей</a></li>
+				<li><a href="about/" title="О компании">О компании</a></li>
+				<li><a href="vakansii.html" title="Вакансии">Вакансии</a></li>
+				<li><a href="organizations/" title="Клиенты">Клиенты</a></li>
+				<li><a href="kontaktyi/" title="Контакты">Контакты</a></li>
+			</ul>
+		</nav>
+		<ul class="socials">
+			<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+			<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+		</ul>
+	</div>
+	
 
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
