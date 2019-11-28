@@ -17,13 +17,16 @@
 	<link rel="stylesheet" href="js/vendor/slick/slick.css" />
 	<link rel="stylesheet" href="js/vendor/slick/slick-theme.css" />
 	<link rel="stylesheet" href="js/vendor/fancybox/jquery.fancybox.css" />
-	<link rel="stylesheet" href="css/main.css">
+	
+	<link rel="stylesheet" href="css/mobile.css">
+	<link rel="stylesheet" href="css/tablet.css" media="all and (min-width: 700px)">
+	<link rel="stylesheet" href="css/desktop.css" media="all and (min-width: 1100px)">
 
 </head>
 
 <body>
 	<div id="body">
-		<aside class="hidden-xs col-sm-4 col-md-3">
+		<aside>
 			<section class="aside-info">
 				<a href="#" class="logo">
 					<img src="img/logo.png" alt="Novatex">
@@ -36,47 +39,47 @@
 					<span class="phone">+38 (044) <b>500-17-95</b></span>
 				</span>
 			</section>
-
 			<nav>
-				<ul class="menu">
-					<li><a href="/" title="Главная">Главная</a></li>
+				<ul>
+					<li><a href="/" title="Главная" class="active">Главная</a></li>
 					<li><a href="catalog/" title="Каталог тканей">Каталог тканей</a></li>
 					<li><a href="about/" title="О компании">О компании</a></li>
-					<li><a href="vakansii.html" title="Вакансии" class="active">Вакансии</a></li>
+					<li><a href="vakansii.html" title="Вакансии">Вакансии</a></li>
 					<li><a href="organizations/" title="Клиенты">Клиенты</a></li>
 					<li><a href="kontaktyi/" title="Контакты">Контакты</a></li>
 				</ul>
-				<ul class="socials">
-					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-					<li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-					<li><a href="#"><i class="fas fa-search"></i></a></li>
-				</ul>
 			</nav>
+
+			<ul class="socials">
+				<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+				<li><a href="#"><i class="fas fa-search"></i></a></li>
+			</ul>
+
 		</aside>
 
-		<div class="col-xs-12 col-sm-8 col-md-9 right-column">
+		<div class="right-column">
 
-			<div class="col-xs-12 row page_order">
+			<div>
 				<ol class="breadcrumb" xmlns:v="http://rdf.data-vocabulary.org/#">
 					<li><span typeof="v:Breadcrumb"><a property="v:title" rel="v:url" href="/">Главная</a></span></li>
 					<li><i class="fas fa-long-arrow-alt-right next"></i></li>
 				</ol>
 			</div>
 
-			<div class="col-xs-12 headline main_h">
+			<div class="main_h">
 				<h1>Вакансии</h1>
-
 			</div>
 
 			<main>
 				<div class="block-1">
 					<h2>Менеджер по работе с клиентами</h2>
 					<h3> ТРЕБОВАНИЯ:</h3>
-					<p> Пол: М / Ж 22-35 лет</p>
-					<p> Образование: среднее / высшее</p>
-					<p> Знание ПК: на уровне уверенного пользователя, MC Office, программы 1С, Internet</p>
-					<p> Личные характеристики: Презентабельная внешность, инициативность и ответственность,
+					<p><b> Пол:</b> М / Ж 22-35 лет</p>
+					<p><b> Образование:</b> среднее / высшее</p>
+					<p><b> Знание ПК:</b> на уровне уверенного пользователя, MC Office, программы 1С, Internet</p>
+					<p><b> Личные характеристики:</b> Презентабельная внешность, инициативность и ответственность,
 						энергичность,
 						<br>
 						активная жизненная позиция.</p>
@@ -102,24 +105,37 @@
 
 					</ul>
 
-					<p> Просьба присылать резюме с фотографией на электронный адрес <a href="#"> info@novatex.com.ua</a>
+					<p><b> Просьба присылать резюме с фотографией на электронный адрес <a href="#"> info@novatex.com.ua</a></b>
 					</p>
 				</div>
+				<div class="empty"></div>
 			</main>
-			<section class="template">
-				<div class="h-content">
-					<h2> Свяжитесь <span> с нами</span></h2>
-
-					<p>Если у вас остались какие-либо вопросы, задайте их нам
-						используя эту форму или позвоните по телефону.</p>
-				</div>
-
-				<div id="envelope_holder"></div>
-				<div id="envelope"><img src="img/layer_1.png" alt=""></div>
-			</section>
+			<section class="template template--contact">
+					<div class="h-content">
+						<h2> Свяжитесь <span> с нами</span></h2>
+						<p>Если у вас остались какие-либо вопросы, задайте их нам
+							используя эту форму или позвоните по телефону.</p>
+					</div>
+					<div class="contact-form">
+						<form action="">
+							<div class="input">
+								<label for="">Ваше имя</label>
+								<input type="text">
+							</div>
+							<div class="input">
+								<label for="">Email</label>
+								<input type="email">
+							</div>
+							<div class="textarea">
+								<label for="">Сообщение</label>
+								<textarea name="" id=""></textarea>
+							</div>
+							<button type="submit" class="btn">Отправить</button>
+						</form>
+					</div>
+				</section>
 
 			<section class="map">
-
 				<div class="template">
 					<div class="h-content">
 						<h2>Представители <span>в Украине</span></h2>
@@ -137,22 +153,25 @@
 					<div class="h-content">
 						<h2>Контакты<span> в Киеве</span></h2>
 					</div>
-
 					<div class="contact_info">
-
-						<p class="contacts"><span><b>Телефоны:</b></span>
-							<span>гор. +38 (044) 599-04-95
-								моб. +38 (066) 500-20-36
-								тел./факс: +38 (044) 500-17-95 </span>
-							<span><b>E-mail:</b> <a href="mailto:novateks@info.ua">novateks@info.ua</a></span>
-							<span><b>Skype:</b> <a href="skype:novateks?chat">novateks</a></span>
-						</p>
-
+						<span><b>Телефоны:</b></span>
+						<span>
+							гор. +38 (044) 599-04-95
+							<br>моб. +38 (066) 500-20-36
+							<br>тел./факс: +38 (044) 500-17-95
+						</span>
+						<span>
+							<b>E-mail:</b>
+							<a href="mailto:novateks@info.ua">novateks@info.ua</a>
+						</span>
+						<span>
+							<b>Skype:</b>
+							<a href="skype:novateks?chat">novateks</a>
+						</span>
 					</div>
 
 					<a href="#">Контакты всех представителей</a>
 				</div>
-
 			</section>
 			<footer>
 				<div>
@@ -165,7 +184,8 @@
 						<li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
 					</ul>
 				</div>
-				<div><span> &copy; Novatex 2012-2019</span>
+				<div>
+					<span> &copy; Novatex 2012-2019</span>
 				</div>
 			</footer>
 		</div>

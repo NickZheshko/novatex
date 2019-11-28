@@ -359,6 +359,7 @@ textarea {
 	line-height: 1;
 	text-align: center;
 	margin: 0 0 20px;
+	font-weight: bold;
 }
 
 .h-content h2:after {
@@ -382,8 +383,6 @@ textarea {
 	text-align: center;
 	margin-top: 0;
 }
-
-
 
 .rectangle {
 	background-color: rgb(198, 213, 64);
@@ -886,11 +885,12 @@ textarea {
 	text-transform: uppercase;
 	font-size: 10px;
 	line-height: 36px;
+	text-decoration: underline;
 }
 
-
-
-
+.contact_info+a:hover {
+	text-decoration: none;
+}
 
 .logo_holder+div {
 	display: inline-flex;
@@ -923,6 +923,7 @@ textarea {
 	margin-top: 0;
 	font-weight: bold;
 	margin-bottom: 30px;
+	margin-left: 15px;
 }
 
 .main_h h1 span {
@@ -934,9 +935,10 @@ textarea {
 	display: block;
 	background-color: rgb(230, 230, 230);
 	position: absolute;
-	width: calc(100% - 60px);
+	width: calc(100% - 420px);
 	height: 5px;
 	margin-bottom: 40px;
+	margin-left: 15px;
 }
 
 .block-1 {
@@ -947,19 +949,7 @@ textarea {
 	color: rgb(78, 77, 77);
 	padding-left: 25px;
 	padding-bottom: 60px;
-	margin-bottom: 120px;
-	margin-top: 200px;
-}
-
-.block-1:after {
-	display: block;
-	content: "";
-	position: absolute;
-	background-color: #D8D4D3;
-	width: calc(100% - 90px);
-	height: 1px;
-	margin-top: 120px;
-	left: 30px;
+	margin-top: 85px;
 }
 
 .block-1 h2 {
@@ -997,6 +987,14 @@ textarea {
 	color: rgb(78, 77, 77);
 	margin-top: 20px;
 	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.empty {
+	width: calc(100% - 60px);
+	height: 60px;
+	border-bottom: 1px solid #D8D4D3;
+	margin-left: 15px;
 }
 
 .block-1 a {
