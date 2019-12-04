@@ -359,7 +359,7 @@ textarea {
 	line-height: 1;
 	text-align: center;
 	margin: 0 0 20px;
-	font-weight: bold;
+	font-weight: bold; /* @info не имеет смысла h1...h6 всегда bold по умолчанию */
 }
 
 .h-content h2:after {
