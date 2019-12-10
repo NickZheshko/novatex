@@ -1008,9 +1008,11 @@ textarea {
 }
 
 .block-2 {
-	width: calc(100% - 50px);
-	padding-left: 15px;
-	margin-bottom: 130px;
+	width: calc(100% - 41px);
+	margin-left: 15px;
+	margin-top: 75px;
+	padding-bottom: 45px;
+	border-bottom: 1px solid #D8D4D3;
 }
 
 .block-2 p {
@@ -1025,18 +1027,15 @@ textarea {
 	margin-bottom: 15px;
 }
 
-.block-2 .collection-2 {
-	display: flex;
-	justify-content: space-between;
-	margin-top: 40px;
-	margin-bottom: 30px;
-}
+ .block-2 .collection-2 {
+	margin-top: 35px;
+} 
 
-.block-2 .collection-2 .item {
+/* .block-2 .collection-2 .item {
 	width: 31.5%;
-}
+} */
 
-.block-2::after {
+/* .block-2::after {
 	display: block;
 	content: "";
 	position: absolute;
@@ -1045,7 +1044,7 @@ textarea {
 	height: 1px;
 	margin-top: 60px;
 	left: 30px;
-}
+} */
 
 .block-3 {
 	display: grid;
