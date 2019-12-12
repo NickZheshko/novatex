@@ -359,7 +359,7 @@ textarea {
 	line-height: 1;
 	text-align: center;
 	margin: 0 0 20px;
-	font-weight: bold;
+	/* font-weight: bold; @info не имеет смысла h1...h6 всегда bold по умолчанию */
 }
 
 .h-content h2:after {
@@ -898,14 +898,29 @@ textarea {
 	width: 190px;
 	margin-right: 45px;
 }
+.top-list {
+	padding: 0 0 0 15px;
+	margin-top: 60px; 
+	margin-bottom:15px;
+	list-style:none;
+	border-radius:4px;
+}
 
-.breadcrumb li a {
+.top-list > li {
+	display:inline-block
+}
+
+.top-list > .active {
+	color:#777
+}
+
+.top-list li a {
 	font-size: 13px;
 	font-family: "Lato";
 	color: rgb(140, 140, 140);
 }
 
-.breadcrumb .next {
+.top-list .next {
 	margin: 1px 5px 0 5px;
 	color: rgb(140, 140, 140);
 }
@@ -914,7 +929,7 @@ textarea {
 	padding-left: 31px;
 }
 
-.main_h h1 {
+main h1 {
 	font-size: 30px;
 	font-family: "Lato";
 	color: rgb(78, 77, 77);
@@ -922,23 +937,12 @@ textarea {
 	text-transform: none;
 	margin-top: 0;
 	font-weight: bold;
-	margin-bottom: 30px;
+	margin-bottom: 75px;
 	margin-left: 15px;
 }
 
-.main_h h1 span {
+main h1 span {
 	font-weight: normal !important;
-}
-
-.main_h:after {
-	content: "";
-	display: block;
-	background-color: rgb(230, 230, 230);
-	position: absolute;
-	width: calc(100% - 420px);
-	height: 5px;
-	margin-bottom: 40px;
-	margin-left: 15px;
 }
 
 .block-1 {
@@ -947,9 +951,9 @@ textarea {
 	margin-left: 15px;
 	font-size: 14px;
 	color: rgb(78, 77, 77);
-	padding-left: 25px;
-	padding-bottom: 60px;
-	margin-top: 85px;
+	padding: 0 0 60px 25px;
+	margin-top: 40px;
+	margin-bottom: 60px;
 }
 
 .block-1 h2 {
@@ -988,13 +992,6 @@ textarea {
 	margin-top: 20px;
 	margin-bottom: 10px;
 	font-weight: bold;
-}
-
-.empty {
-	width: calc(100% - 60px);
-	height: 60px;
-	border-bottom: 1px solid #D8D4D3;
-	margin-left: 15px;
 }
 
 .block-1 a {
@@ -2342,6 +2339,10 @@ aside .logo,
 	font-size: 14px;
 }
 
+aside .logo span {
+	font-style: italic;
+}
+
 aside .logo img,
 #slider .logo img {
 	margin-bottom: 5px;
@@ -2458,6 +2459,42 @@ footer .socials li {
 	.adaptive_span {
 		width: 0.5vw;
 	}
+	
+}
+@media only screen and (max-width: 699px) {
+	.block-1 {
+		width: 100%;
+		margin-left: 0;
+	}
+	main h1:after {
+        content: "";
+        display: block;
+        background-color: rgb(230, 230, 230);
+        position: absolute;
+        width: calc(100% - 40px);
+        height: 5px;
+        margin-top: 30px;
+        left: 20px;
+	}
+	
+	main h1 {
+        margin-left: 0;
+    }
+    
+    .top-list {
+        padding-left: 0;
+	}
+	
+	.block-1::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: calc(100% - 40px);
+        height: 1px;
+        background-color: #D8D4D3;
+        margin-left: -25px;
+        margin-top: 120px;
+    }
 }
 
 @media only screen and (min-width: 500px) {
@@ -2477,6 +2514,7 @@ footer .socials li {
 	.collection-1 .item a {
 		height: 200px;
 	}
+
 }
 @media only screen and (min-width: 600px) {
 	#slider .aside-info {

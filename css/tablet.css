@@ -202,6 +202,16 @@ aside .logo img,
 	margin-bottom: 15px;
 }
 
+main h1:after {
+    content: "";
+    display: block;
+    background-color: rgb(230, 230, 230);
+    position: absolute;
+    width: calc(100% - 400px);
+    height: 5px;
+    margin-top: 30px;
+}
+
 @media only screen and (min-width: 875px) {
     #body {
         padding-top: 0;
@@ -272,6 +282,17 @@ aside .logo img,
     }
 }
 
+.block-1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: calc(100% - 400px);
+    height: 1px;
+    background-color: #D8D4D3;
+    margin-left: -25px;
+    margin-top: 120px;
+}
+
 @media only screen and (min-width: 992px) {
 	.use-bg {
 		background-position: right bottom;
@@ -279,7 +300,7 @@ aside .logo img,
 
 	.news .item .date {
 		top: 49%
-	}
+    }
 
 	footer .footer .col-sm-6 {
 		clear: none !important;
@@ -311,5 +332,43 @@ aside .logo img,
 
 	.adaptive span {
 		width: 0.2vw;
-	}
+    }
+
+}
+
+@media only screen and (max-width: 875px) {
+    .block-1 {
+		width: 100%;
+		margin-left: 0;
+    }
+
+    main h1:after {
+        content: "";
+        display: block;
+        background-color: rgb(230, 230, 230);
+        position: absolute;
+        width: calc(100% - 40px);
+        height: 5px;
+        margin-top: 30px;
+        left: 20px;
+    }
+
+    main h1 {
+        margin-left: 0;
+    }
+    
+    .top-list {
+        padding-left: 0;
+    }
+
+    .block-1::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: calc(100% - 40px);
+        height: 1px;
+        background-color: #D8D4D3;
+        margin-left: -25px;
+        margin-top: 120px;
+    }
 }
