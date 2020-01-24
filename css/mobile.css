@@ -489,7 +489,7 @@ textarea {
 
 .collection-2 {
 	display: flex;
-	justify-content: space-around;
+	/* justify-content: space-around; */
 	margin: 0 -10px 15px;
 	flex-wrap: wrap;
 }
@@ -530,6 +530,7 @@ textarea {
 }
 .collection-2.slick-initialized .item {
 	margin-bottom: 10px;
+	margin-left: 15px;
 }
 
 .top_wave {
@@ -947,7 +948,7 @@ main h1 span {
 
 .block-1 {
 	background-color: #F0F0F0;
-	width: calc(100% - 60px);
+	width: calc(100% - 50px);
 	margin-left: 15px;
 	font-size: 14px;
 	color: rgb(78, 77, 77);
@@ -1005,11 +1006,11 @@ main h1 span {
 }
 
 .block-2 {
-	width: calc(100% - 41px);
+	width: calc(100% - 50px);
 	margin-left: 15px;
-	margin-top: 75px;
-	padding-bottom: 45px;
-	border-bottom: 1px solid #D8D4D3;
+	padding-bottom: 25px;
+	font-size: 14px;
+	/* border-bottom: 1px solid #D8D4D3; */
 }
 
 .block-2 p {
@@ -1510,15 +1511,14 @@ section.promo .sale a.photo .pointer2 {
 	margin-top: 60px;
 }
 
-.collection-4 {
+ .collection-4 {
 	display: grid;
-	grid-template-columns: 31% 31% 31%;
+	grid-template-columns: 48% 48%;
 	grid-template-rows: 205px 205px;
-	grid-gap: 30px;
+	grid-gap: 25px;
 	justify-items: center;
-	width: calc(100% - 60px);
-	margin-left: 15px;
-}
+	width: calc(100% - 10px);
+} 
 
 .collection-4 .item {
 	display: flex;
@@ -1529,6 +1529,7 @@ section.promo .sale a.photo .pointer2 {
 .collection-4 .item img {
 	width: 100%;
 	height: 205px;
+	border: 1px solid blue;
 }
 
 .collection-4 .item span {
@@ -1551,7 +1552,7 @@ section.promo .sale a.photo .pointer2 {
 	max-width: 170px;
 	opacity: 0.8;
 	top: 37%;
-	left: 19%;
+	left: 30%;
 }
 
 .collection-4 .item span:hover {
@@ -1561,22 +1562,22 @@ section.promo .sale a.photo .pointer2 {
 	box-shadow: 1px 3px 3px black;
 }
 
+.collection-4 .slick-initialized .item {
+	margin-bottom: 60px;
+}
+
 .block-5 {
-	/* width: calc(100% - 60px); */
-	margin-left: 15px;
+	width: 100%; 
+	padding: 0 45px 60px 30px;
 	background: #F0F0F0;
 	margin-top: 60px;
-	padding-left: 30px;
 	line-height: 1.714;
-	height: 500px;
-	width: 865px;
-	;
+	margin-left: 15px;
 }
 
 .block-5 p {
 	line-height: 1.714;
-	white-space: pre-line;
-	font-size: 13px;
+	font-size: 14px;
 	margin-top: 25px;
 	margin-bottom: 0px;
 }
@@ -1612,18 +1613,17 @@ section.promo .sale a.photo .pointer2 {
 }
 
 .block-5:after {
-	display: block;
-	content: "";
-	position: absolute;
-	background-color: #D8D4D3;
-	width: calc(100% - 90px);
-	height: 1px;
-	margin-top: 140px;
-	left: 30px;
+    display: block;
+    content: "";
+    position: absolute;
+    background-color: #D8D4D3;
+    width: calc(100% - 40px);
+    height: 1px;
+    margin: 140px 0 0 -30px;
 }
 
 .termo {
-	margin-bottom: 120px;
+	margin-bottom: 85px;
 }
 
 .collection-5 {
@@ -2447,6 +2447,21 @@ footer .socials li {
 	margin-right: 0;
 }
 
+.block-7 {
+	margin-left: 15px;
+	font-size: 14px;
+	margin-right: 15px;
+	line-height: 1.571;
+	padding-bottom: 45px;
+	border-bottom: 1px solid #D8D4D3;
+}
+
+.coll {
+	
+}
+
+
+
 /** ==========================================================================
 	End Layouts
 ========================================================================== */
@@ -2459,6 +2474,14 @@ footer .socials li {
 	.adaptive_span {
 		width: 0.5vw;
 	}
+
+	.collection-4 {
+		grid-gap: 20px;
+	}
+
+	.collection-4 .item span {
+		left: 17%;
+	}
 	
 }
 @media only screen and (max-width: 699px) {
@@ -2466,6 +2489,7 @@ footer .socials li {
 		width: 100%;
 		margin-left: 0;
 	}
+
 	main h1:after {
         content: "";
         display: block;
@@ -2494,7 +2518,22 @@ footer .socials li {
         background-color: #D8D4D3;
         margin-left: -25px;
         margin-top: 120px;
-    }
+	}
+	
+	.block-2,
+	.block-7 {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.block-5 {
+		width: 100%; 
+		padding: 0 45px 60px 30px;
+		background: #F0F0F0;
+		margin-top: 60px;
+		line-height: 1.714;
+		margin-left: 0;
+	}
 }
 
 @media only screen and (min-width: 500px) {
@@ -2514,6 +2553,15 @@ footer .socials li {
 	.collection-1 .item a {
 		height: 200px;
 	}
+	
+	/* .coll {
+		margin-left: 0.1px;
+		margin-right: 15px;
+	} */
+	/* .block-2, 
+	.block-7 {
+		margin-left: 0;
+	} */
 
 }
 @media only screen and (min-width: 600px) {
@@ -2708,7 +2756,7 @@ body {
 
 p {
 	color: #4e4d4d;
-	line-height: 18px;
+	/* line-height: 18px; */
 }
 
 div {

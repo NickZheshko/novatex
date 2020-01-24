@@ -7,22 +7,23 @@
 		<title>Каталог тканей - Новатекс (Novatex)</title>
 		<meta name="description" content="Каталог тканей - Новатекс (Novatex)" />
 		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" href="../../fonts/Lato/stylesheet.css">
-		<link rel="stylesheet" href="../../fonts/fontawesome/css/all.min.css">
-		<link rel="stylesheet" href="../../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="../../fonts/font-awesome-4.0.3/css/font-awesome.min.css">
-		<link rel="stylesheet" href="../../css/bootstrap.css">
-		<link type="text/css" rel="stylesheet" href="../../js/vendor/fancybox/jquery.fancybox.css" />
-		<link rel="stylesheet" href="../../css/main.css">
+
+	<link rel="stylesheet" href="../../fonts/Lato/stylesheet.css">
+	<link rel="stylesheet" href="../../fonts/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="../../css/normalize.css">
+	<link rel="stylesheet" href="../../js/vendor/slick/slick.css" />
+	<link rel="stylesheet" href="../../js/vendor/slick/slick-theme.css" />
+	<link rel="stylesheet" href="../../js/vendor/fancybox/jquery.fancybox.css" />
+
+	<link rel="stylesheet" href="../../css/mobile.css">
+	<link rel="stylesheet" href="../../css/tablet.css" media="all and (min-width: 700px)">
+	<link rel="stylesheet" href="../../css/desktop.css" media="all and (min-width: 1100px)">
     
 </head>
 <body>
         
 	<div id="body">
-
-		<aside class="hidden-xs col-sm-4 col-md-3">
-
-
+		<aside>
 			<section class="aside-info">
 				<a href="#" class="logo">
 					<img src="../../img/logo.png" alt="Novatex">
@@ -37,7 +38,7 @@
 			</section>
 
 			<nav>
-				<ul class="menu">
+				<ul>
 					<li><a href="/" title="Главная">Главная</a></li>
 					<li><a href="catalog/" title="Каталог тканей" class="active">Каталог тканей</a></li>
 					<li><a href="about/" title="О компании">О компании</a></li>
@@ -45,35 +46,31 @@
 					<li><a href="organizations/" title="Клиенты">Клиенты</a></li>
 					<li><a href="kontaktyi/" title="Контакты">Контакты</a></li>
 				</ul>
+			</nav>	
+
 				<ul class="socials">
 					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
 					<li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
 					<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
 					<li><a href="#"><i class="fas fa-search"></i></a></li>
 				</ul>
-			</nav>
-
+			
 		</aside>
 
 
-		<div class="col-xs-12 col-sm-8 col-md-9 right-column">
-
-
-			<div class="col-xs-12 row page_order">
-				<ol class="breadcrumb" xmlns:v="http://rdf.data-vocabulary.org/#">
-					<li><span typeof="v:Breadcrumb"><a property="v:title" rel="v:url" href="/">Главная</a></span></li>
+		<div class="right-column">
+			<div>
+				<ul type="none" class="top-list">
+					<li><span><a>Главная</a></span></li>
 					<li><i class="fas fa-long-arrow-alt-right next"></i></li>
-					<li><span typeof="v:Breadcrumb"><a property="v:title" rel="v:url" href="/">Каталог тканей</a></span></li>
+					<li><span><a>Каталог тканей</a></span></li>
 					<li><i class="fas fa-long-arrow-alt-right next"></i></li>
-				</ol>
-			</div>
-
-			<div class="col-xs-12 headline main_h">
-				<h1>Терможаккард</h1>
+				</ul>
 			</div>
 
 			<main class="termo">
-					<div class="collection-4">
+					<h1>Терможаккард</h1>
+					<div class="collection-4 js-slider-01">
 						<div class="item with_wave"><a href="#"><img src="../../img/sofas/newyork.jpg" alt=""><span>News</span></a></div>
 						<div class="item with_wave"><a href="#"><img src="../../img/sofas/newyork.jpg" alt=""><span>Gallery room</span></a></div>
 						<div class="item with_wave"><a href="#"><img src="../../img/sofas/newyork.jpg" alt=""><span>New York</span></a></div>
@@ -101,25 +98,35 @@
 
 					</div>
 			</main>
-
-			<section class="template">
+			<section class="template template--contact">
 				<div class="h-content">
 					<h2> Свяжитесь <span> с нами</span></h2>
-
 					<p>Если у вас остались какие-либо вопросы, задайте их нам
 						используя эту форму или позвоните по телефону.</p>
 				</div>
-
-				<div id="envelope_holder"></div>
-				<div id="envelope"><img src="../../img/layer_1.png" alt=""></div>
+				<div class="contact-form">
+					<form action="">
+						<div class="input">
+							<label for="">Ваше имя</label>
+							<input type="text">
+						</div>
+						<div class="input">
+							<label for="">Email</label>
+							<input type="email">
+						</div>
+						<div class="textarea">
+							<label for="">Сообщение</label>
+							<textarea name="" id=""></textarea>
+						</div>
+						<button type="submit" class="btn">Отправить</button>
+					</form>
+				</div>
 			</section>
 
 			<section class="map">
-
 				<div class="template">
 					<div class="h-content">
 						<h2>Представители <span>в Украине</span></h2>
-
 						<p> Наведите курсор мыши на точку,
 							чтобы увидеть город и контакты представителя.
 						</p>
@@ -134,21 +141,25 @@
 					<div class="h-content">
 						<h2>Контакты<span> в Киеве</span></h2>
 					</div>
-
 					<div class="contact_info">
-
-						<p class="contacts"><span><b>Телефоны:</b></span>
-							<span>гор. +38 (044) 599-04-95
-								моб. +38 (066) 500-20-36
-								тел./факс: +38 (044) 500-17-95 </span>
-							<span><b>E-mail:</b> <a href="mailto:novateks@info.ua">novateks@info.ua</a></span>
-							<span><b>Skype:</b> <a href="skype:novateks?chat">novateks</a></span>
-						</p>
+						<span><b>Телефоны:</b></span>
+						<span>
+							гор. +38 (044) 599-04-95
+							<br>моб. +38 (066) 500-20-36
+							<br>тел./факс: +38 (044) 500-17-95
+						</span>
+						<span>
+							<b>E-mail:</b>
+							<a href="mailto:novateks@info.ua">novateks@info.ua</a>
+						</span>
+						<span>
+							<b>Skype:</b>
+							<a href="skype:novateks?chat">novateks</a>
+						</span>
 					</div>
 
 					<a href="#">Контакты всех представителей</a>
 				</div>
-
 			</section>
 
 			<footer>
@@ -165,71 +176,100 @@
 				<div><span> &copy; Novatex 2012-2019</span>
 				</div>
 			</footer>
-
 		</div>
 
 	</div>
+
+		<div class="topbar">
+			<div class="hamburger js-hamburger" id="hamburger-9">
+				<span class="line"></span>
+				<span class="line"></span>
+				<span class="line"></span>
+			</div>
+			<div class="phone">+38 (066) 500-20-36</div>
+		</div>
+		<div class="nav-mobile">
+			<nav>
+				<ul>
+					<li><a href="/" title="Главная" class="active">Главная</a></li>
+					<li><a href="catalog/" title="Каталог тканей">Каталог тканей</a></li>
+					<li><a href="about/" title="О компании">О компании</a></li>
+					<li><a href="vakansii.html" title="Вакансии">Вакансии</a></li>
+					<li><a href="organizations/" title="Клиенты">Клиенты</a></li>
+					<li><a href="kontaktyi/" title="Контакты">Контакты</a></li>
+				</ul>
+			</nav>
+			<ul class="socials">
+				<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+				<li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+			</ul>
+		</div>
         
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-        <script src="js/mousewheel.js"></script>
-        <script src="js/easing.js"></script>
-        
-        <script src="js/vendor/bootstrap.min.js"></script>
-        <script src="js/vendor/jquery.ba-hashchange.min.js"></script>
-        <script src="js/vendor/jquery.sequence-min.js"></script>
-        <script src="js/vendor/rhinoslider-1.05.min.js"></script>
-        <script type="text/javascript" src="js/vendor/jquery.mmenu.min.js"></script>
-		<script type="text/javascript" src="js/vendor/fancybox/jquery.fancybox.pack.js"></script>
-
-        <script src="js/plugins.js"></script>
-		<script src="js/main.js?v=1"></script>
-		
-		<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-		<script type="text/javascript" src="/assets/components/phpthumbsup/js/responsive.js"></script>
+        <script src="../../js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+	<script type="../../text/javascript" src="/assets/components/phpthumbsup/js/responsive.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')
+	</script>
+	<script src="../../js/vendor/bootstrap.min.js"></script>
+	<script src="../../js/vendor/slick/slick.min.js"></script>
+	<script src="../../js/vendor/fancybox/jquery.fancybox.pack.js"></script>
+	<script src="../../js/plugins.js"></script>
+	<script src="../../js/main.js"></script>
 
 
-        <!-- Yandex.Metrika counter -->
-        <script type="text/javascript">
-        	(function (d, w, c) {
-        		(w[c] = w[c] || []).push(function() {
-        			try {
-        				w.yaCounter22658293 = new Ya.Metrika({id:22658293,
-        													  webvisor:true,
-        													  clickmap:true,
-        													  trackLinks:true,
-        													  accurateTrackBounce:true});
-        			} catch(e) { }
-        		});
-		
-		var n = d.getElementsByTagName("script")[0],
-			s = d.createElement("script"),
-			f = function () { n.parentNode.insertBefore(s, n); };
-		s.type = "text/javascript";
-		s.async = true;
-		s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
-		
-		if (w.opera == "[object Opera]") {
-			d.addEventListener("DOMContentLoaded", f, false);
-		} else { f(); }
-	})(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="//mc.yandex.ru/watch/22658293" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript">
+		(function (d, w, c) {
+			(w[c] = w[c] || []).push(function () {
+				try {
+					w.yaCounter22658293 = new Ya.Metrika({
+						id: 22658293,
+						webvisor: true,
+						clickmap: true,
+						trackLinks: true,
+						accurateTrackBounce: true
+					});
+				} catch (e) {}
+			});
 
-<script type="text/javascript">
+			var n = d.getElementsByTagName("script")[0],
+				s = d.createElement("script"),
+				f = function () {
+					n.parentNode.insertBefore(s, n);
+				};
+			s.type = "text/javascript";
+			s.async = true;
+			s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-8379685-5']);
-  _gaq.push(['_trackPageview']);
+			if (w.opera == "[object Opera]") {
+				d.addEventListener("DOMContentLoaded", f, false);
+			} else {
+				f();
+			}
+		})(document, window, "yandex_metrika_callbacks");
+	</script>
+	<noscript>
+		<div><img src="//mc.yandex.ru/watch/22658293" style="position:absolute; left:-9999px;" alt="" /></div>
+	</noscript>
+	<!-- /Yandex.Metrika counter -->
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-8379685-5']);
+		_gaq.push(['_trackPageview']);
 
-</script>
+		(function () {
+			var ga = document.createElement('script');
+			ga.type = 'text/javascript';
+			ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') +
+				'.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
 
 
 
