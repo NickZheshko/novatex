@@ -8,20 +8,25 @@
 	<title>Каталог тканей - Новатекс (Novatex)</title>
 	<meta name="description" content="Каталог тканей - Новатекс (Novatex)" />
 	<meta name="viewport" content="width=device-width">
+
 	<link rel="stylesheet" href="../fonts/Lato/stylesheet.css">
 	<link rel="stylesheet" href="../fonts/fontawesome/css/all.min.css">
-	<link rel="stylesheet" href="../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="../fonts/font-awesome-4.0.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="../css/bootstrap.css">
-	<link type="text/css" rel="stylesheet" href="../js/vendor/fancybox/jquery.fancybox.css" />
-	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/normalize.css">
+	<link rel="stylesheet" href="../js/vendor/slick/slick.css" />
+	<link rel="stylesheet" href="../js/vendor/slick/slick-theme.css" />
+	<link rel="stylesheet" href="../js/vendor/fancybox/jquery.fancybox.css" />
+
+	<link rel="stylesheet" href="../css/mobile.css">
+	<link rel="stylesheet" href="../css/tablet.css" media="all and (min-width: 700px)">
+	<link rel="stylesheet" href="../css/desktop.css" media="all and (min-width: 1100px)">
 
 </head>
 
 <body>
 
 	<div id="body">
-		<aside class="hidden-xs">
+
+		<aside>
 			<section class="aside-info">
 				<a href="#" class="logo">
 					<img src="../img/logo.png" alt="Novatex">
@@ -36,33 +41,35 @@
 			</section>
 			<nav>
 				<ul>
-					<li><a href="/" title="Главная">Главная</a></li>
-					<li><a href="catalog/" title="Каталог тканей" class="active">Каталог тканей</a></li>
+					<li><a href="/" title="Главная" class="active">Главная</a></li>
+					<li><a href="catalog/" title="Каталог тканей">Каталог тканей</a></li>
 					<li><a href="about/" title="О компании">О компании</a></li>
 					<li><a href="vakansii.html" title="Вакансии">Вакансии</a></li>
 					<li><a href="organizations/" title="Клиенты">Клиенты</a></li>
 					<li><a href="kontaktyi/" title="Контакты">Контакты</a></li>
 				</ul>
+
 			</nav>
+
 			<ul class="socials">
 				<li><a href="#"><i class="fab fa-instagram"></i></a></li>
 				<li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
 				<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
 				<li><a href="#"><i class="fas fa-search"></i></a></li>
 			</ul>
+
 		</aside>
+
 		<div class="right-column">
-			<div class="col-xs-12 row page_order">
-				<ol class="breadcrumb" xmlns:v="http://rdf.data-vocabulary.org/#">
-					<li><span typeof="v:Breadcrumb"><a property="v:title" rel="v:url" href="/">Главная</a></span></li>
+			<div>
+				<ul type="none" class="top-list">
+					<li><span><a>Главная</a></span></li>
 					<li><i class="fas fa-long-arrow-alt-right next"></i></li>
-				</ol>
+				</ul>
 			</div>
 
-			<div class="col-xs-12 headline main_h">
-				<h1>Каталог <span>тканей</span></h1>
-			</div>
 			<main>
+				<h1>Каталог тканей</h1>
 				<div class="collection-3">
 					<div class="item with_wave">
 						<a href="#"><img src="../img/clothes/long.png" alt=""><span>% Sale</span></a>
@@ -88,24 +95,35 @@
 				</div>
 			</main>
 
-			<section class="template">
+			<section class="template template--contact">
 				<div class="h-content">
 					<h2> Свяжитесь <span> с нами</span></h2>
-
 					<p>Если у вас остались какие-либо вопросы, задайте их нам
 						используя эту форму или позвоните по телефону.</p>
 				</div>
-
-				<div id="envelope_holder"></div>
-				<div id="envelope"><img src="../img/layer_1.png" alt=""></div>
+				<div class="contact-form">
+					<form action="">
+						<div class="input">
+							<label for="">Ваше имя</label>
+							<input type="text">
+						</div>
+						<div class="input">
+							<label for="">Email</label>
+							<input type="email">
+						</div>
+						<div class="textarea">
+							<label for="">Сообщение</label>
+							<textarea name="" id=""></textarea>
+						</div>
+						<button type="submit" class="btn">Отправить</button>
+					</form>
+				</div>
 			</section>
 
 			<section class="map">
-
 				<div class="template">
 					<div class="h-content">
 						<h2>Представители <span>в Украине</span></h2>
-
 						<p> Наведите курсор мыши на точку,
 							чтобы увидеть город и контакты представителя.
 						</p>
@@ -120,21 +138,24 @@
 					<div class="h-content">
 						<h2>Контакты<span> в Киеве</span></h2>
 					</div>
-
 					<div class="contact_info">
-
-						<p class="contacts"><span><b>Телефоны:</b></span>
-							<span>гор. +38 (044) 599-04-95
-								моб. +38 (066) 500-20-36
-								тел./факс: +38 (044) 500-17-95 </span>
-							<span><b>E-mail:</b> <a href="mailto:novateks@info.ua">novateks@info.ua</a></span>
-							<span><b>Skype:</b> <a href="skype:novateks?chat">novateks</a></span>
-						</p>
+						<span><b>Телефоны:</b></span>
+						<span>
+							гор. +38 (044) 599-04-95
+							<br>моб. +38 (066) 500-20-36
+							<br>тел./факс: +38 (044) 500-17-95
+						</span>
+						<span>
+							<b>E-mail:</b>
+							<a href="mailto:novateks@info.ua">novateks@info.ua</a>
+						</span>
+						<span>
+							<b>Skype:</b>
+							<a href="skype:novateks?chat">novateks</a>
+						</span>
 					</div>
-
 					<a href="#">Контакты всех представителей</a>
 				</div>
-
 			</section>
 
 			<footer>
@@ -148,13 +169,40 @@
 						<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
 					</ul>
 				</div>
-				<div><span> &copy; Novatex 2012-2019</span>
-				</div>
+				<div><span> &copy; Novatex 2012-2019</span></div>
 			</footer>
 
 		</div>
 
 	</div>
+
+	<div class="topbar">
+		<div class="hamburger js-hamburger" id="hamburger-9">
+			<span class="line"></span>
+			<span class="line"></span>
+			<span class="line"></span>
+		</div>
+		<div class="phone">+38 (066) 500-20-36</div>
+	</div>
+
+	<div class="nav-mobile">
+		<nav>
+			<ul>
+				<li><a href="/" title="Главная" class="active">Главная</a></li>
+				<li><a href="catalog/" title="Каталог тканей">Каталог тканей</a></li>
+				<li><a href="about/" title="О компании">О компании</a></li>
+				<li><a href="vakansii.html" title="Вакансии">Вакансии</a></li>
+				<li><a href="organizations/" title="Клиенты">Клиенты</a></li>
+				<li><a href="kontaktyi/" title="Контакты">Контакты</a></li>
+			</ul>
+		</nav>
+		<ul class="socials">
+			<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+			<li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+			<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+		</ul>
+	</div>
+
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 	<script>

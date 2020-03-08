@@ -1,10 +1,17 @@
+#slider {
+    width: calc(100% + 40px);
+    position: relative;
+    overflow: hidden;
+    margin: 0 -20px;
+}
+
 #slider .arrows_holder>div:first-child {
-    width: 66.5%;
+    width: 50%;
     margin-right: 30px;
 }
 
 #slider .arrows_holder>div:last-child {
-	width: 33.5%;
+	width: 50%
 }
 #slider .arrows_holder>div:after {
 	height: 5px;
@@ -13,11 +20,13 @@
 }
 
 #slider .arrows_holder>div:first-child:after {
-	left: 30px;
+    left: 20px;
+    width: calc(100% - 65px);
 }
 
 #slider .arrows_holder>div:last-child:after {
-	right: 30px;
+    right: 20px;
+    width: calc(100% - 65px);
 }
 
 #slider .arrows_holder .arrow {
@@ -207,9 +216,19 @@ main h1:after {
     display: block;
     background-color: rgb(230, 230, 230);
     position: absolute;
-    width: calc(100% - 400px);
+    width: calc(100% - 340px);
     height: 5px;
     margin-top: 30px;
+}
+
+main::after {
+    display: block;
+    content: "";
+    position: relative;
+    background-color: #D8D4D3;
+    width: 100%;
+    height: 1px;
+    margin-top: 59.5px;
 }
 
 .collection-4 {
@@ -219,20 +238,38 @@ main h1:after {
 	grid-gap: 30px;
 	justify-items: center;
 	width: calc(100% - 70px);
-	margin-left: 15px;
 }
 
 .block-5 {
-    width: calc(100% - 55px); 
+    width: 100%; 
 }
 
 .collection-4 .item span {
     left: 22%;
 }
 
+.timetable b {
+    font-size: 24px; 
+}
+
+.districts .item:nth-child(4),
+.districts .item:nth-child(5),
+.districts .item:nth-child(6) {
+	margin-bottom: 0;
+}
+
 @media only screen and (min-width: 875px) {
     #body {
         padding-top: 0;
+    }
+
+    #slider .arrows_holder>div:first-child {
+        width: 70%;
+        margin-right: 30px;
+    }
+    
+    #slider .arrows_holder>div:last-child {
+        width:30%;
     }
     
 	.news .item .date {
@@ -263,6 +300,7 @@ main h1:after {
     .right-column {
         width: calc(100% - 300px);
         margin-left: 300px;
+        padding: 0 20px 0 20px;
     }
     .topbar {
         display: none;
@@ -300,30 +338,27 @@ main h1:after {
     }
 
     .coll {
-        margin-left: 0.1px;
-        margin-right: 15px;
+        margin-left: -10px;
+        margin-right: -10px;
     }
-}
 
-.block-1::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: calc(100% - 400px);
-    height: 1px;
-    background-color: #D8D4D3;
-    margin-left: -25px;
-    margin-top: 120px;
-}
+    .timetable span {
+        font-size: 16px;
+    }
+    
+    .timetable>div:nth-child(2) {
+        line-height: 2.05;
+        margin-bottom: 30px;
+    }
 
-.block-5:after {
-    display: block;
-    content: "";
-    position: absolute;
-    background-color: #D8D4D3;
-    width: calc(100% - 390px);
-    height: 1px;
-    margin: 140px 0 0 -30px;
+    .districts .item span {
+        display: block;
+        font-size: 15px;
+    }
+
+    .districts .item h3 {
+        font-size: 16px;
+    }
 }
 
 @media only screen and (min-width: 992px) {
@@ -375,34 +410,32 @@ main h1:after {
 		margin-left: 0;
     }
 
+     main::after {
+        margin-top: 60px;
+    }
+
     main h1:after {
         content: "";
         display: block;
         background-color: rgb(230, 230, 230);
-        position: absolute;
-        width: calc(100% - 40px);
+        position: relative;
+        width: 100%;
         height: 5px;
         margin-top: 30px;
-        left: 20px;
     }
 
     main h1 {
         margin-left: 0;
     }
+
+    
+    .collection-2 {
+        margin-left: -12px;
+        margin-right: -20px;
+    }
     
     .top-list {
         padding-left: 0;
-    }
-
-    .block-1::after {
-        content: "";
-        display: block;
-        position: absolute;
-        width: calc(100% - 40px);
-        height: 1px;
-        background-color: #D8D4D3;
-        margin-left: -25px;
-        margin-top: 120px;
     }
 
     .collection-4, .block-5 {
@@ -410,15 +443,6 @@ main h1:after {
         margin-left: 0;
     }
 
-    .block-5:after {
-        display: block;
-        content: "";
-        position: absolute;
-        background-color: #D8D4D3;
-        width: calc(100% - 40px);
-        height: 1px;
-        margin: 140px 0 0 -30px;
-    }
 
     .block-2 {
         margin-left: 0.1px;
@@ -431,10 +455,4 @@ main h1:after {
     .collection-4 .item span {
         left: 31%;
     }
-
-    /* .block-2, 
-    .block-7 {
-        margin-right: 0.1px;
-        margin-left: 15px;
-    } */
 }
