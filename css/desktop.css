@@ -53,6 +53,17 @@
 .collection-2.collection-2--main .item:last-child {
     display: none;
 }
+.collection-3 {
+	grid-auto-rows: 140px;
+}
+.collection-3 .item:after {
+	height: calc(100% - 20px);
+	top: 10px;
+}
+.collection-3 .item::before {
+	width: calc(100% - 20px);
+	left: 10px;
+}
 
 .coll {
 	margin-left: -10px;

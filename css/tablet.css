@@ -295,6 +295,9 @@ aside .logo img,
     .collection-2.collection-2--main .item:last-child {
         display: block;
     }
+    .collection-3 {
+		grid-template-columns: repeat(4, 1fr);
+	}
 
     .coll {
         margin-left: -10px;
