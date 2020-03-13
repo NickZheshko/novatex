@@ -72,17 +72,10 @@
 .contact-form .btn {
     top: 50px;
 }
-.collection-1 .item,
+
 .collection-2 .item {
-    width: calc(33% - 24px);
-    margin: 0 12px 20px;
+    width: calc(33% - 20px);
 }
-
-.collection-1 .item a {
-    height: 150px;
-}
-
-.collection-1.collection-1--main .item:last-child,
 .collection-2.collection-2--main .item:last-child {
     display: none;
 }
@@ -308,11 +301,10 @@ aside .logo img,
     #slider .ellipse span span {
         font-size: 3.2vw;
     }
-    .collection-1 .item,
+
     .collection-2 .item {
         width: calc(50% - 24px);
     }
-    .collection-1.collection-1--main .item:last-child,
     .collection-2.collection-2--main .item:last-child {
         display: block;
     }
@@ -389,12 +381,7 @@ aside .logo img,
 		width: 100%;
 		margin-left: 0;
     }
-
-    .collection-2 {
-        margin-left: -12px;
-        margin-right: -20px;
-    }
-    
+   
     .top-list {
         padding-left: 0;
     }
