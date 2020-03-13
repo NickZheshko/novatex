@@ -1404,61 +1404,6 @@ section.promo .sale a.photo .pointer2 {
 	font-size: 15px;
 }
 
- .collection-4 {
-	display: grid;
-	grid-template-columns: 48% 48%;
-	grid-template-rows: 205px 205px;
-	grid-gap: 25px;
-	justify-items: center;
-	width: calc(100% - 10px);
-} 
-
-.collection-4 .item {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.collection-4 .item img {
-	width: 100%;
-	height: 205px;
-	border: 1px solid blue;
-}
-
-.collection-4 .item span {
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	text-transform: uppercase;
-	line-height: 2;
-	text-decoration: none;
-	font-size: 14px;
-	font-weight: bold;
-	background-color: #fff;
-	color: rgb(78, 77, 77);
-	height: 50px;
-	padding-left: 25px;
-	padding-right: 25px;
-	border-radius: 50px;
-	width: 12vw;
-	position: absolute;
-	max-width: 170px;
-	opacity: 0.8;
-	top: 37%;
-	left: 30%;
-}
-
-.collection-4 .item span:hover {
-	border: 1px solid black;
-	opacity: 1;
-	font-weight: 900;
-	box-shadow: 1px 3px 3px black;
-}
-
-.collection-4 .slick-initialized .item {
-	margin-bottom: 60px;
-}
-
 .block-5 {
 	width: 100%; 
 	padding: 0 45px 60px 30px;
@@ -2345,17 +2290,6 @@ footer .socials li {
 	.adaptive_span {
 		width: 0.5vw;
 	}
-
-	.collection-4 {
-		grid-gap: 20px;
-	}
-
-	.collection-4 .item span {
-		left: 17%;
-	}
-
-
-	
 }
 @media only screen and (max-width: 699px) {
 	.block-1 {

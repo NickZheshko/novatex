@@ -204,21 +204,8 @@ aside .logo img,
 	margin-bottom: 15px;
 }
 
-.collection-4 {
-	display: grid;
-	grid-template-columns: 48% 48%;
-	grid-template-rows: 205px 205px;
-	grid-gap: 30px;
-	justify-items: center;
-	width: calc(100% - 70px);
-}
-
 .block-5 {
     width: 100%; 
-}
-
-.collection-4 .item span {
-    left: 22%;
 }
 
 .timetable b {
@@ -386,21 +373,11 @@ aside .logo img,
         padding-left: 0;
     }
 
-    .collection-4, .block-5 {
-        width: 100%;
-        margin-left: 0;
-    }
-
-
     .block-2 {
         margin-left: 0.1px;
     }
 
     .block-7 {
         margin-left: 0;
-    }
-
-    .collection-4 .item span {
-        left: 31%;
     }
 }

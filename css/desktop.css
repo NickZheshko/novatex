@@ -82,20 +82,6 @@ aside {
     margin-left: 320px;
 }
 
-.collection-4 {
-	display: grid;
-    grid-template-columns: 31% 31% 31%;
-    grid-template-rows: 205px 205px;
-    grid-gap: 30px;
-    justify-items: center;
-    width: calc(100% - 60px);
-	/* margin-left: 15px; */
-}
-	
-.collection-4 .item span {
-    left: 11%;
-}
-
 .timetable span {
 	font-size: 16px;
 }
