@@ -938,20 +938,28 @@ textarea {
 	padding-left: 31px;
 }
 
+main {
+	width: 100%;
+	border-bottom: 1px solid #D8D4D3;
+	padding-bottom: 10px;
+}
+
 main h1 {
 	font-size: 30px;
 	font-family: "Lato";
 	color: rgb(78, 77, 77);
-	text-align: left;
-	text-transform: none;
-	margin-top: 0;
-	font-weight: bold;
-	margin-bottom: 75px;
-	/* margin-left: 15px; */
+    margin: 0 0 40px;
+    position: relative;
 }
-
+main h1:after {
+    content: "";
+    display: block;
+    background-color: rgb(230, 230, 230);
+    height: 5px;
+    margin-top: 30px;
+}
 main h1 span {
-	font-weight: normal !important;
+	font-weight: normal;
 }
 
 .block-1 {
@@ -1263,16 +1271,6 @@ section.promo .sale a.photo .pointer2 {
 	grid-template-rows: 200px 200px 200px;
 	grid-column-gap: 30px;
 	grid-row-gap: 30px;
-}
-
-main::after {
-    display: block;
-    content: "";
-    position: relative;
-    background-color: #D8D4D3;
-    width: 100%;
-    height: 1px;
-    margin-top: 59.5px;
 }
 
 .collection-3 .item {
@@ -2460,11 +2458,6 @@ footer .socials li {
 }
 
 
-main {
-	width: 100%;
-}
-
-
 /** ==========================================================================
 	End Layouts
 ========================================================================== */
@@ -2494,22 +2487,7 @@ main {
 		width: 100%;
 		margin-left: 0;
 	}
-
-	main h1:after {
-        content: "";
-        display: block;
-        background-color: rgb(230, 230, 230);
-        position: absolute;
-        width: calc(100% - 40px);
-        height: 5px;
-        margin-top: 30px;
-        left: 20px;
-	}
-	
-	main h1 {
-        margin-left: 0;
-    }
-    
+  
     .top-list {
         padding-left: 0;
 	}

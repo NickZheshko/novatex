@@ -211,26 +211,6 @@ aside .logo img,
 	margin-bottom: 15px;
 }
 
-main h1:after {
-    content: "";
-    display: block;
-    background-color: rgb(230, 230, 230);
-    position: absolute;
-    width: calc(100% - 340px);
-    height: 5px;
-    margin-top: 30px;
-}
-
-main::after {
-    display: block;
-    content: "";
-    position: relative;
-    background-color: #D8D4D3;
-    width: 100%;
-    height: 1px;
-    margin-top: 59.5px;
-}
-
 .collection-4 {
 	display: grid;
 	grid-template-columns: 48% 48%;
@@ -410,25 +390,6 @@ main::after {
 		margin-left: 0;
     }
 
-     main::after {
-        margin-top: 60px;
-    }
-
-    main h1:after {
-        content: "";
-        display: block;
-        background-color: rgb(230, 230, 230);
-        position: relative;
-        width: 100%;
-        height: 5px;
-        margin-top: 30px;
-    }
-
-    main h1 {
-        margin-left: 0;
-    }
-
-    
     .collection-2 {
         margin-left: -12px;
         margin-right: -20px;
