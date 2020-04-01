@@ -385,24 +385,6 @@ textarea {
 	margin-top: 0;
 }
 
-.rectangle {
-	background-color: rgb(198, 213, 64);
-	margin: auto;
-	width: 40px;
-	height: 5px;
-}
-
-.rectangle+div {
-	font-style: italic;
-	font-size: 14px;
-}
-
-
-.without_margin {
-	margin-top: 0 !important;
-	margin-bottom: 0 !important;
-}
-
 .with_wave {
 	position: relative;
 }
@@ -572,15 +554,6 @@ textarea {
 .collection-3 .item img {
 	max-width: 100%;
 	height: auto;
-}
-
-.top_wave {
-	top: 0;
-}
-
-.bottom_wave {
-	margin-bottom: 0px;
-	bottom: 0;
 }
 
 .links {
